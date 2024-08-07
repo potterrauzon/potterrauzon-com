@@ -450,7 +450,11 @@ fieldset {
 							
 .save-or-reset{
 	display: flex;
-}								
+}					
+
+legend{
+	display: none;
+}
 
 
 /* BUTTONS */
