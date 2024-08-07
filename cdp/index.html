@@ -42,7 +42,7 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVLH6NFC"
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVLH6NFC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
@@ -50,18 +50,22 @@
         <div class="form-inner-container">
             <div class="heading-xl padding-bottom-32 form-title">This is some text</div>
             <form >
-                <label class="detail" for="search">First Name</label>
-                <input class="body-m black-text margin-bottom-24" type="text" name="search" placeholder="">
+                <fieldset>
+                <legend>Customer information, first name, last name, email.</legend>
+                <label class="detail" for="f-name">First Name</label>
+                <input class="body-m black-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
                 
-                <label class="detail" for="search">Last Name</label>
-                <input class="body-m black-text margin-bottom-24" type="text" name="search" placeholder="">
+                <label class="detail" for="l-name">Last Name</label>
+                <input class="body-m black-text margin-bottom-24" type="text" id="l-name" name="l-name" placeholder="">
                 
-                <label class="detail" for="search">Email</label>
-                <input class="body-m black-text margin-bottom-24" type="text" name="search" placeholder="">
-                
+                <label class="detail" for="email">Email</label>
+                <input class="body-m black-text margin-bottom-24" type="email" id="email" name="email" placeholder="">
+
+                </fieldset>
                 <div class="save-or-reset">
-                    <div class="primary-button-m margin-right-16">Save</div>
+                    <button class="primary-button-m margin-right-16" type="submit">Save</button>
                     <div class="secondary-button-m">Reset</div>
+                    
                 </div>
             </form>
         </div>

@@ -97,6 +97,10 @@ textarea:focus::placeholder, input:focus::placeholder {
 	display: none;
 }
 
+fieldset {
+	border: none;
+}
+
 /* FONT STYLES */
 
 .heading-xxl{
@@ -464,6 +468,7 @@ textarea:focus::placeholder, input:focus::placeholder {
 	padding: 12px 30px 14px 30px;
 	border: none;
 	border-radius: 25px;
+	cursor: pointer;
 }
 
 .primary-button-m{
@@ -479,6 +484,8 @@ textarea:focus::placeholder, input:focus::placeholder {
 	padding: 8px 22px 11px 22px;
 	border: none;
 	border-radius: 4px;
+	cursor: pointer;
+	
 }
 
 .primary-button-s{
@@ -494,6 +501,7 @@ textarea:focus::placeholder, input:focus::placeholder {
 	padding: 5px 15px 6px 15px;
 	border: none;
 	border-radius: 15px;
+	cursor: pointer;
 }
 
 .secondary-button-l{
@@ -509,6 +517,7 @@ textarea:focus::placeholder, input:focus::placeholder {
 	padding: 10px 30px 12px 30px;
 	border: 2px solid #000000;
 	border-radius: 25px;
+	cursor: pointer;
 }
 
 .secondary-button-m{
@@ -524,6 +533,7 @@ textarea:focus::placeholder, input:focus::placeholder {
 	padding: 8px 22px 11px 22px;
 	border: 2px solid #000000;
 	border-radius: 6px;
+	cursor: pointer;
 }
 
 .secondary-button-s{
@@ -539,6 +549,7 @@ textarea:focus::placeholder, input:focus::placeholder {
 	padding: 5px 15px 6px 15px;
 	border: 2px solid #000000;
 	border-radius: 15px;
+	cursor: pointer;
 }
 
 
