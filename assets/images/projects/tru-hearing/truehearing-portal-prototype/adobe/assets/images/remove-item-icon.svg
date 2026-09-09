@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="remove-item-icon" transform="translate(0.122 0.122)">
+    <g id="Placement_Area" data-name="Placement Area" transform="translate(-0.122 -0.122)" fill="red" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+      <rect width="18" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="17" height="17" fill="none"/>
+    </g>
+    <g id="Icon">
+      <g id="Canvas" transform="translate(-0.122 -0.122)" fill="#747474" stroke="#747474" stroke-width="1" opacity="0">
+        <rect width="18" height="18" stroke="none"/>
+        <rect x="0.5" y="0.5" width="17" height="17" fill="none"/>
+      </g>
+      <path id="Base" d="M9.011,1a8.011,8.011,0,1,0,8.011,8.011A8.011,8.011,0,0,0,9.011,1Z" transform="translate(0.001 0.001)" fill="#fff"/>
+      <path id="Path_186665" data-name="Path 186665" d="M9.011,1a8.011,8.011,0,1,0,8.011,8.011A8.011,8.011,0,0,0,9.011,1Zm5.007,8.511a.5.5,0,0,1-.5.5H4.5a.5.5,0,0,1-.5-.5v-1a.5.5,0,0,1,.5-.5h9.012a.5.5,0,0,1,.5.5Z" transform="translate(0.001 0.001)" fill="#eb1000"/>
+    </g>
+  </g>
+</svg>

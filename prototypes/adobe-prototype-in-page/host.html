@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Adobe Prototype — In Page</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; }
+    body {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 16px; min-height: 100vh; background: #e5e7eb;
+    }
+    .device-frame {
+      width: 390px; height: 845px;
+      overflow: hidden;
+      box-shadow: 0 12px 40px rgba(0,0,0,.35);
+      background: #000;
+    }
+    .device-frame iframe {
+      width: 390px; height: 845px; border: 0; display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="device-frame">
+    <iframe id="app-frame" src="adobe-prototype/index.html" title="Adobe prototype"></iframe>
+  </div>
+</body>
+</html>

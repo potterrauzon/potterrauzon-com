@@ -1,0 +1,8 @@
+<svg id="outside-link-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <rect id="Placement_Area" data-name="Placement Area" width="18" height="18" fill="red" opacity="0"/>
+  <g id="Icon">
+    <rect id="Canvas" width="18" height="18" fill="#464646" opacity="0"/>
+    <path id="Path_749860" data-name="Path 749860" d="M16,8.75V15H2V2H9.25a.25.25,0,0,0,.25-.25v-.5A.25.25,0,0,0,9.25,1H1.5a.5.5,0,0,0-.5.5v14a.5.5,0,0,0,.5.5h15a.5.5,0,0,0,.5-.5V8.75a.25.25,0,0,0-.25-.25h-.5A.25.25,0,0,0,16,8.75Z" fill="#fff"/>
+    <path id="Path_749861" data-name="Path 749861" d="M11.77,1.426l1.694,1.7L8.692,7.894a.25.25,0,0,0,0,.354L9.75,9.309a.25.25,0,0,0,.354,0l4.773-4.773L16.571,6.23A.25.25,0,0,0,17,6.054V1H11.946a.25.25,0,0,0-.177.426Z" fill="#fff"/>
+  </g>
+</svg>

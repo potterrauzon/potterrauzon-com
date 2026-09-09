@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="Icon" transform="translate(-16 -17)">
+    <path id="Path_749960" data-name="Path 749960" d="M10.564,2.206,1.315,18.756a.5.5,0,0,0,.436.744h18.5a.5.5,0,0,0,.436-.744L11.436,2.206a.5.5,0,0,0-.872,0ZM12,17.25a.25.25,0,0,1-.25.25h-1.5a.25.25,0,0,1-.25-.25v-1.5a.25.25,0,0,1,.25-.25h1.5a.25.25,0,0,1,.25.25Zm0-3.5a.25.25,0,0,1-.25.25h-1.5a.25.25,0,0,1-.25-.25v-6a.25.25,0,0,1,.25-.25h1.5a.25.25,0,0,1,.25.25Z" transform="translate(16 17)" fill="#fff"/>
+    <rect id="Frame" width="22" height="22" transform="translate(16 17)" fill="none"/>
+  </g>
+</svg>

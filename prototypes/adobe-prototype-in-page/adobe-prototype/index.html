@@ -1,0 +1,1699 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Adobe Support App Test</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style>
+		/* Hide the scrollbar but keep scrolling */
+		html { scrollbar-width: none; -ms-overflow-style: none; }
+		html::-webkit-scrollbar { width: 0; height: 0; display: none; }
+	</style>
+
+</head>
+<body>
+<div class="container">
+
+	<!-- login container -->
+	<div id="login-container" class="" >
+		
+		<!-- login page -->
+		<div class="" id="login">
+			<video id="login-video-bg" autoplay muted loop >
+				  <source src="assets/videos/App_bg_dark_15sec_lowQual.mp4" type="video/mp4">
+			</video>
+			<div class="login-container">
+				
+				<div class="logo-lockup">
+					<div class="padding-bottom-16"><img class="login-logo" src="assets/images/adobe-logo-white.png" /></div>
+					<div class="heading-xxl white-text">Ultimate Support</div>
+				</div>	
+				
+				<div class="login-button-container">
+					<div class="login-button margin-bottom-24" >Login with Adobe ID</div>
+					<div class="login-help-text body-m white-text text-link">Get help logging in</div>
+				</div>
+			</div>
+		</div><!-- end login page -->
+
+	</div><!-- end login container -->
+
+	<div class="" id="header-container">
+		<div id="header-bg" class="" ></div>
+		<div id="header-content" class="" >
+			<div id="button-back" class="navigation"  target-page="back-button">
+				<div id="back-arrow-white" class="back-arrow" ><img src="assets/images/back-arrow-white.svg"/></div>
+				<div id="back-arrow-black" class="back-arrow" ><img src="assets/images/back-arrow-black.svg"/></div>
+			</div>
+			<div id="main-logo" class="" >
+				<div id="adobe-logo-white" class="adobe-logo" ><img src="assets/images/adobe-logo-white.svg" /></div>
+				<div id="adobe-logo-red" class="adobe-logo" ><img src="assets/images/adobe-logo.svg" /></div>
+			</div>
+			<div id="header-profile" class="navigation" target-page="profile"><img class="header-profile-pic"  src="assets/images/profile-pic-placeholder.png"/></div>
+		</div>
+	</div>
+
+	<!-- subheads and alerts -->
+	<div id="subhead-and-alerts" class="">
+		
+		<div id="header-overlay-container" class="">
+			<div id="ho-background" class="">
+			 <!-- PLACE BACKGROUNDS IN HERE -->
+
+			</div>
+			<div id="ho-outline" class="" >
+				
+			</div>
+			<div id="ho-content" class="">
+				<!-- HEADER CONTENT HERE -->
+				<div id="" class="top-overlay-content" >
+					<div id="toc-chat-container" class="" >
+						<div id="toc-chat-wrapper">
+							<div id="toc-chat-left" class="padding-top-8 white-text heading-l" >You’re chatting with Bryan from Adobe</div>
+							<div id="toc-chat-right" class="white-text body-m text-link navigation" target-page="back-button" >Close chat</div>
+						</div>
+					</div>
+
+					<div id="toc-case-container" class="" >
+						<div id="toc-case-top" class="padding-top-8 white-text heading-l" >Case #234567891001</div>
+						<div id="toc-case-bottom" class="padding-top-8 white-text body-m" >Last updated Jan 8, 2024 </div>
+					</div>
+
+					<div id="toc-steps" class="" >
+						<div id="toc-steps-text" class="" >
+							<div id="toc-steps-text-black" class="" >Steps</div>
+							<div id="toc-steps-text-white" class="" >Steps</div>
+						</div>
+						<div id="toc-steps-progress" class="" >
+							<div id="toc-step-1" class="" >
+								<div id="toc-step-1-black" class="" >
+									<div id="" class="toc-step-center-text heading-s white-text" >1</div>
+								</div>
+								<div id="toc-step-1-check" class="" >
+									<div id="toc-step-1-check-mark" class=""><img src="assets/images/check-icon.svg" /></div>
+									
+								</div>
+							</div>
+							<div id="toc-steps-line-container" class="padding-both-8" >
+								<div id="toc-steps-line" class="" ></div>
+								<div id="toc-steps-line-white" class="" ></div>
+							</div>
+							<div id="toc-steps-2" class="" >
+								<div id="toc-step-2-clear" class="" >
+									<div id="" class="toc-step-center-text heading-s black-text" >2</div>
+								</div>
+								<div id="toc-step-2-white" class="" >
+									<div id="" class="toc-step-center-text heading-s black-text" >2</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="toc-status-details-container" class="padding-top-8" >
+						<div id="toc-status-left" class="padding-right-16"><img src="assets/images/alert-icon.svg"/></div>
+						<div id="toc-status-right" class="">
+							<div id="" class="heading-m padding-bottom-8">Adobe Workfront</div>
+							<div id="" class="body-s">1 Trivial issue reported today</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>	
+		</div>
+
+		<div id="alert-overlay-container" class="" >
+			<div id="success-alert-container">
+				<div id="sa-inner-container" class="green" >
+					<div id="sa-status-icon"><img src="assets/images/status-icon-white.svg"/></div>
+					<div id="sa-status-text" class="">Case created</div>
+					<div id="sa-status-button" class="white-text heading-s" target-page="case-details">View</div>
+					<div id="sa-status-close-button"><img src="assets/images/white-close-x.svg"/></div>
+				</div>
+			</div>
+			<div id="warning-alert-container">
+				<div id="wa-inner-container" class="red" >
+					<div id="wa-status-icon"><img src="assets/images/alert-icon-white.svg"/></div>
+					<div id="wa-status-text" class="">One or more fields are incorrect.</div>
+					<div id="wa-status-close-button"><img src="assets/images/white-close-x.svg"/></div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end subheads and alerts -->
+
+
+	<!-- nav container -->
+	<div id="nav-container" class="" >
+		<div id="nav-inner-container">
+			<div id="nav-bg" class="" ></div>
+			<div id="nav-active-bar"></div>
+			<div id="nav-items-container" class="">
+				<div id="nav-item-home" class="navigation nav-item" target-page="home">
+				<div id="" class="ni-icon-container" >
+					<div id="" class="ni-icon ni-icon-red" ><img src="assets/images/home-icon-red.svg" /></div>
+					<div id="" class="ni-icon ni-icon-gray" ><img src="assets/images/home-icon-grey.svg" /></div>
+				</div>
+				<div id="" class="ni-text-container" >
+					<div id="" class="ni-text" >Home</div>
+					<div id="" class="ni-text-active" >Home</div>
+				</div>
+				</div>
+				<div id="nav-item-contact" class="navigation nav-item" target-page="contact">
+					<div id="" class="ni-icon-container" >
+						<div id="" class="ni-icon ni-icon-red" ><img src="assets/images/contact-icon-red.svg" /></div>
+						<div id="" class="ni-icon ni-icon-gray" ><img src="assets/images/contact-icon-grey.svg" /></div>
+					</div>
+					<div id="" class="ni-text-container" >
+						<div id="" class="ni-text" >Contact</div>
+						<div id="" class="ni-text-active" >Contact</div>
+					</div>
+				</div>
+				<div id="nav-item-cases" class="navigation nav-item" target-page="cases">
+					<div id="" class="ni-icon-container" >
+						<div id="" class="ni-icon ni-icon-red" ><img src="assets/images/cases-icon-red.svg" /></div>
+						<div id="" class="ni-icon ni-icon-gray" ><img src="assets/images/cases-icon-grey.svg" /></div>
+					</div>
+					<div id="" class="ni-text-container" >
+						<div id="" class="ni-text" >Cases</div>
+						<div id="" class="ni-text-active" >Cases</div>
+					</div>
+				</div>
+				<div id="nav-item-status" class="navigation nav-item" target-page="status">
+					<div id="" class="ni-icon-container" >
+						<div id="" class="ni-icon ni-icon-red" ><img src="assets/images/status-icon-red.svg" /></div>
+						<div id="" class="ni-icon ni-icon-gray" ><img src="assets/images/status-icon-grey.svg" /></div>
+					</div>
+					<div id="" class="ni-text-container" >
+						<div id="" class="ni-text" >Status</div>
+						<div id="" class="ni-text-active" >Status</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- end nav container -->
+	
+	
+	<div id="animated-bg-container" class="">
+		<div id="abg-inner-container" class="">
+			<div id="abg-image-container">
+				<img src="assets/images/gradient-background-edited.jpg"/>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+	<!-- All pages -->
+	<div id="" class="pages">
+
+		<div class="page padding-top-100" id="home" is-base="true"><!-- pages -->
+			<div class="page-top-section margin-both-24">
+				<div class="top-text">
+					<div class="heading-xl">Hey, [First Name]</div>
+					<div class="body-xl">How can we help you today?</div>
+					<div class="organization padding-top-24 padding-bottom-24">
+						<div class="heading-m">Townsend Medical</div>
+						<div class="text-link body-m">Log out to change orgs</div>
+					</div>
+				</div>
+
+				<div class="color-card-wrapper">
+					<div class="color-card blue navigation" target-page="start-chat-product">
+						<div class="heading-m white-text">Chat with Adobe Support</div>
+						<div class="icon-and-text">
+							<div class="icon-and-text-icon">
+								<img src="assets/images/chat-icon-white.svg">
+							</div>
+							<div class="body-s white-text">Start a chat</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="color-card-wrapper">
+					<div class="color-card purple navigation card-inactive" target-page="cases">
+						<div class="heading-m white-text">View & manage open support cases</div>
+						<div class="icon-and-text">
+							<div class="icon-and-text-icon">
+								<img src="assets/images/cases-icon-white.svg">
+							</div>
+							<div class="body-s white-text">Go to my cases</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="color-card-wrapper">
+					<div class="color-card fuchsia navigation card-inactive" target-page="open-case-product">
+						<div class="heading-m white-text">Open a new support case</div>
+						<div class="icon-and-text">
+							<div class="icon-and-text-icon">
+								<img src="assets/images/support-icon-white.svg">
+							</div>
+							<div class="body-s white-text">Create a ticket</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="color-card-wrapper">
+					<div class="color-card magenta card-inactive">
+						<div class="heading-m white-text">Ask a question in the community</div>
+						<div class="icon-and-text">
+							<div class="icon-and-text-icon">
+								<img src="assets/images/outside-link-white.svg">
+							</div>
+							<div class="body-s white-text">Go to community</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="color-card-trigger">
+					<span id="expandText">Expand</span>
+					<span id="collapseText" class="hiddenText">Collapse</span>
+					<img src="assets/images/down-arrow.svg" id="expand-icon" class="expandArrow">
+				</div>
+			</div>
+			<div class="success-team margin-both-24">
+				<div class="padding-top-24 padding-bottom-24 heading-l">My Ultimate Success Team</div>
+				<div class="team-member-card-pill margin-bottom-24">
+					<div class="team-member-icon cyan">
+						<div class="heading-xl black-text">HY</div>
+					</div>
+					<div id="home-tam-helen" class="team-member-info">
+						<div class="team-member-title black-text">Helen Young</div>
+						<div class="team-member-role med-grey-text detail">Technical Account Manager</div>
+						<div class="icon-and-text">
+							<div class="icon-and-text-icon">
+								<img src="assets/images/email-icon.svg">
+							</div>
+							<div class="body-s black-text">email</div>
+						</div>
+					</div>
+				</div>
+				<div class="team-member-card-pill margin-bottom-24">
+					<div class="team-member-icon purple">
+						<div class="heading-xl white-text">RH</div>
+					</div>
+					<div id="home-tam-raymond" class="team-member-info">
+						<div class="team-member-title black-text">Raymond Harrison</div>
+						<div class="team-member-role med-grey-text detail">Customer Success Manager</div>
+						<div class="icon-and-text">
+							<div class="icon-and-text-icon">
+								<img src="assets/images/email-icon.svg">
+							</div>
+							<div class="body-s black-text">email</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-success-team">
+					<div class="heading-m">Contact my Ultimate Success team</div>
+					<div class="success-icon-set margin-top-24 margin-bottom-24">
+						<div class="team-member-icon-med icon-stack blue navigation" target-page="contact">
+							<div class="heading-l white-text">JE</div>
+						</div>
+						<div class="team-member-icon-med icon-stack pink navigation" target-page="contact"> 
+							<div class="heading-l white-text">JE</div>
+						</div>
+						<div class="team-member-icon-med icon-stack yellow navigation" target-page="contact">
+							<div class="heading-l">JE</div>
+						</div>
+						<div class="team-member-icon-med icon-stack purple navigation" target-page="contact">
+							<div class="heading-l white-text">JE</div>
+						</div>	
+						<div class="team-member-icon-med icon-stack white navigation" target-page="contact">
+							<div class="heading-l black-text">+3</div>
+						</div>	
+					</div>
+					<button class="navigation secondary-button-m" target-page="contact">View all members</button>
+					<div class=""></div>
+				</div>
+			</div>
+			<div class="get-started-video padding-top-24 padding-bottom-24">
+				<div class="padding-top-24 padding-bottom-24 heading-l margin-both-24">Get started with Ultimate Success</div>
+				
+				<div class="large-video-block">
+					<div class="large-video-image"><img src="assets/images/play-button.svg"></div>
+					<div class="detail">3:24 min</div>
+					<div class="heading-xs">Ultimate Success Video Title Lorem Ipsum Dolor</div>
+				</div>
+				<div class="small-videos">
+					<div class="small-video-block">
+						<div class="small-video-image"><img src="assets/images/play-button.svg"></div>
+						<div class="detail">3:24 min</div>
+						<div class="heading-xs">Ultimate Success Video Title Lorem Ipsum Dolor</div>
+					</div>
+					<div class="small-video-block">
+						<div class="small-video-image"><img src="assets/images/play-button.svg"></div>
+						<div class="detail">3:24 min</div>
+						<div class="heading-xs">Ultimate Success Video Title Lorem Ipsum Dolor</div>
+					</div>
+					<div class="small-video-block">
+						<div class="small-video-image"><img src="assets/images/play-button.svg"></div>
+						<div class="detail">3:24 min</div>
+						<div class="heading-xs">Ultimate Success Video Title Lorem Ipsum Dolor</div>
+					</div>
+				</div>
+				<div class="documentation margin-top-24 margin-bottom-24">
+					<div class="heading-m padding-bottom-16">Looking for documentation or tutorials?</div>
+					<button class="navigation secondary-button-m" target-page="contact">View all members</button>
+				</div>
+			</div>
+			<div class="margin-both-24 padding-top-24 padding-bottom-32">
+				<div class="padding-top-24 padding-bottom-24 heading-l">My Experience Cloud products</div>
+				
+				<div class="navigation system-status-card margin-bottom-16 green-border" target-page="status-details">
+					<div class="status-card-left">
+						<div class="status-card-left-bar green"></div>
+						<div class="padding-both-16">
+							<div class="heading-s">Adobe Audience Manager</div>
+							<div class="body-s">Available</div>
+						</div>
+					</div>
+					<div class="status-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="navigation system-status-card margin-bottom-16 green-border" target-page="status-details">
+					<div class="status-card-left">
+						<div class="status-card-left-bar green"></div>
+						<div class="padding-both-16">
+							<div class="heading-s">Adobe Analytics</div>
+							<div class="body-s">Available</div>
+						</div>
+					</div>
+					<div class="status-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="navigation system-status-card margin-bottom-16 orange-border" target-page="status-details">
+					<div class="status-card-left">
+						<div class="status-card-left-bar orange"></div>
+						<div class="padding-both-16">
+							<div class="heading-s">Adobe Workfront</div>
+							<div class="body-s">1 Minor issue in progress</div>
+						</div>
+					</div>
+					<div class="status-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="navigation system-status-card margin-bottom-16 red-border" target-page="status-details">
+					<div class="status-card-left">
+						<div class="status-card-left-bar red"></div>
+						<div class="padding-both-16">
+							<div class="heading-s">Adobe Target</div>
+							<div class="body-s">1 Major issue in progress</div>
+						</div>
+					</div>
+					<div class="status-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+			</div>
+			<div class="navigation submit-feedback-block margin-both-24 padding-bottom-48 navigation" target-page="submit-feedback">
+				<div class="submit-feedback-image padding-bottom-16"><img src="assets/images/feedback-image_home.png"></div>
+				<div class="heading-m padding-bottom-16 black-text">How is your Ultimate <br>Success experience?</div>
+				<div class="secondary-button-m" >Submit feedback</div>
+			</div>
+		</div><!-- end home -->
+		
+		<div class="page padding-top-100" id="profile" is-base="true">
+			<div class="page-top-section margin-both-24 margin-bottom-32">
+				<div class="top-text">
+					<div class="heading-xl padding-bottom-8">Profile</div>
+					<div class="body-m">Your profile photo and name appear when you log in to Adobe.com, Adobe products and services, and on public-facing sites like Behance. This information is visible to others and can be different from your account name if you choose. You can update your Public Profile at any time and it will automatically update anywhere your profile photo and name appear. If you are part of an enterprise organization, your enterprise directory identity may be used in collaborations with other members of your organization.</div>
+				</div>
+			</div>
+
+			<div class="basic-card margin-both-24 white padding-top-48 padding-bottom-24 margin-bottom-48">
+				<div class="profile-pic padding-bottom-48">
+					<div class="person-image"></div>
+					<div class="heading-l">ElaineG02</div>
+				</div>
+				<div class="profile-buttons">
+					<div class="profile-sub-card padding-both-24 white">
+						<div class="profile-sub-card-left">
+							<div class="heading-m">Update personal information</div>
+						</div>
+						<div class="profile-sub-card-right">
+							<img src="assets/images/outside-link-icon-gray.svg">
+						</div>
+					</div>
+					<div class="profile-sub-card padding-both-24 white navigation" target-page="notification-settings">
+						<div class="profile-sub-card-left">
+							<div class="heading-m">Manage app notifications</div>
+						</div>
+						<div class="profile-sub-card-right">
+							<img src="assets/images/right-arrow.svg">
+						</div>
+					</div>
+					<div class="profile-sub-card padding-both-24 white navigation" target-page="display-settings">
+						<div class="profile-sub-card-left">
+							<div class="heading-m">App display preferences</div>
+						</div>
+						<div class="profile-sub-card-right">
+							<img src="assets/images/right-arrow.svg">
+						</div>
+					</div>
+					<div class="profile-sub-card padding-both-24 white navigation" target-page="about">
+						<div class="profile-sub-card-left">
+							<div class="heading-m">About</div>
+						</div>
+						<div class="profile-sub-card-right">
+							<img src="assets/images/right-arrow.svg">
+						</div>
+					</div>
+					
+					<div class="profile-sub-card padding-both-24 white navigation" target-page="home">
+						<div class="profile-sub-card-left">
+							<div class="heading-m">Sign out</div>
+						</div>
+						<div class="profile-sub-card-right">
+							<img src="assets/images/right-arrow.svg">
+						</div>
+					</div>
+
+
+				</div>
+				
+			</div>
+		</div><!-- end profile -->
+		
+		<!-- Notification settings page -->
+		<div class="page  padding-top-100" id="notification-settings">
+			<div class="margin-both-24">
+				<div class="page-top-section margin-bottom-32">
+					<div class="top-text">
+						<div class="heading-xl padding-bottom-8">Change your app notification settings</div>
+						<div class="body-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+					</div>
+				</div>
+
+				<div class="application-settings padding-bottom-48">
+					<div class="heading-m padding-bottom-24">Application Settings</div>
+					<div class="setting-container margin-bottom-24">
+						<div class="sc-left">
+							<div class="body-m">Notify me when I have a response to an open case</div>
+						</div>
+						<div class="cs-right">
+							<div class="toggle-pill" state="on">
+								<div class="tp-blue-bg"></div>
+								<div class="tp-gray-bg"></div>
+								<div class="tp-button"></div>
+							</div>
+						</div>
+					</div>
+					<div class="setting-container margin-bottom-24">
+						<div class="sc-left">
+							<div class="body-m">Notify me when a case is closed</div>
+						</div>
+						<div class="cs-right">
+							<div class="toggle-pill" state="off">
+								<div class="tp-blue-bg"></div>
+								<div class="tp-gray-bg"></div>
+								<div class="tp-button"></div>
+							</div>
+						</div>
+					</div>
+					<div class="setting-container margin-bottom-24">
+						<div class="sc-left">
+							<div class="body-m">Notify me when a case manager has been assigned to my case</div>
+						</div>
+						<div class="cs-right">
+							<div class="toggle-pill" state="on">
+								<div class="tp-blue-bg"></div>
+								<div class="tp-gray-bg"></div>
+								<div class="tp-button"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="submit-feedback-block margin-both-24  padding-bottom-48 navigation" target-page="submit-feedback">
+					<div class="submit-feedback-image padding-bottom-16"><img src="assets/images/feedback-image_notification-settings.png"></div>
+					<div class="heading-m padding-bottom-16 black-text">Share your experience with us</div>
+					<div class="secondary-button-m" >Submit app feedback</div>
+				</div>
+			</div>
+		</div><!-- end notification settings page -->
+
+		<!-- display settings page -->
+		<div class="page  padding-top-100" id="display-settings">
+			<div class="margin-both-24">
+				<div class="page-top-section margin-bottom-32">
+					<div class="top-text">
+						<div class="heading-xl padding-bottom-8">Change your app notification settings</div>
+						<div class="body-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+					</div>
+				</div>
+				<div class="application-settings padding-bottom-48">
+					<div class="setting-container margin-bottom-24">
+						<div class="sc-left">
+							<div class="body-m">View signatures in posts</div>
+						</div>
+						<div class="cs-right">
+							<div class="toggle-pill" state="off">
+								<div class="tp-blue-bg"></div>
+								<div class="tp-gray-bg"></div>
+								<div class="tp-button"></div>
+							</div>
+						</div>
+					</div>
+					<div class="setting-container margin-bottom-24">
+						<div class="sc-left">
+							<div class="body-m">Ignore HTML</div>
+						</div>
+						<div class="cs-right">
+							<div class="toggle-pill" state="off">
+								<div class="tp-blue-bg"></div>
+								<div class="tp-gray-bg"></div>
+								<div class="tp-button"></div>
+							</div>
+						</div>
+					</div>
+
+					<form >
+						<label class="detail" for="product">Date display format</label>
+						<select class="body-m black-text margin-bottom-32" id="product" name="product">
+							<option value="">DD-MM-YYYY</option>
+							<option value="">MM-DD-YYYY</option>
+							<option value="">YYYY-MM-DD</option>
+							<option value="">YYYY-DD-MM</option>
+						</select>
+						<label class="detail" for="search">Sorting order within cases</label>
+						<div class="radio-button-set margin-bottom-16">
+							<div class="radio-button margin-bottom-16" state="off">
+								<div class="rb-check">
+									<div class="rb-check-bg"></div>
+									<div class="rb-check-active"></div>
+									<div class="rb-check-dot"></div>
+								</div>
+								<div class="rb-label body-m">Oldest first</div>
+							</div>
+							<div class="radio-button margin-bottom-16" state="off">
+								<div class="rb-check">
+									<div class="rb-check-bg"></div>
+									<div class="rb-check-active"></div>
+									<div class="rb-check-dot"></div>
+								</div>
+								<div class="rb-label body-m">Newest first</div>
+							</div>
+							<div class="radio-button margin-bottom-16" state="on">
+								<div class="rb-check">
+									<div class="rb-check-bg"></div>
+									<div class="rb-check-active"></div>
+									<div class="rb-check-dot"></div>
+								</div>
+								<div class="rb-label body-m">Use default (oldest first)</div>
+							</div>
+						</div>
+
+
+						<label class="detail" for="search">Case per page</label>
+						<input class="body-m black-text margin-bottom-24" type="text" name="search" placeholder="Search all cases">
+						
+						<div class="save-or-reset">
+							<div class="primary-button-m margin-right-16">Save</div>
+							<div class="secondary-button-m">Reset</div>
+						</div>
+						
+						
+					</form>
+				</div>
+			</div>
+		</div><!-- end display settings page -->
+		
+		<!-- about page -->
+		<div class="page  padding-top-100" id="about">
+			<div class="margin-both-24">
+				<div class="page-top-section margin-bottom-32">
+					<div class="top-text">
+						<div class="heading-xl padding-bottom-8">About</div>
+						<div class="body-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+					</div>
+				</div>
+
+				<div class="about-terms">
+					<div class="body-s text-link padding-bottom-24">Adobe general terms of use</div>
+					<div class="body-s text-link padding-bottom-24">Adobe privacy policy </div>
+					<div class="body-s text-link padding-bottom-24">Do not sell or share my personal information (required for US only)</div>
+					<div class="body-s text-link padding-bottom-24">Third party notices</div>
+					<div class="setting-container margin-bottom-24">
+						<div class="sc-left">
+							<div class="body-m">Send usage info/send crash info/crash notice</div>
+						</div>
+						<div class="cs-right">
+							<div class="toggle-pill" state="on">
+								<div class="tp-blue-bg"></div>
+								<div class="tp-gray-bg"></div>
+								<div class="tp-button"></div>
+							</div>
+						</div>
+					</div>
+					<div class="italic-xs padding-bottom-24">By continuing to use this app, you agree to share your app activity and crash data with Adobe to help improve our apps and personalize your experience. You can change your preferences in the settings at any time. <div class="text-link-inline text-display-inline">Learn more</div></div>
+				</div>
+			</div>
+			<div class="trademark-block padding-both-24 white padding-top-16 padding-bottom-32">
+				<div class="body-xs">© [First Year of Publication-Current Year] Adobe. All Rights Reserved. Adobe, the Adobe logo and [insert product name*] are either registered trademarks or trademarks of Adobe in the United States and/or other countries. All other trademarks are the property of their respective owners.</div>
+			</div>
+		</div><!-- end about page -->
+
+		
+		<div class="page padding-top-100" id="contact" is-base="true"><!-- Contact pages -->
+			<div class="page-top-section margin-both-24 padding-bottom-48">
+				<div class="top-text">
+					<div class="heading-xl">Contact Adobe</div>	
+				</div>
+				<div class="color-card purple navigation margin-both-24" target-page="cases">
+					<div class="heading-m white-text">Find and review converted support chats in your cases</div>
+					<div class="icon-and-text">
+						<div class="icon-and-text-icon">
+							<img src="assets/images/cases-icon-white.svg">
+						</div>
+						<div class="body-s white-text">Go to my cases</div>
+					</div>
+				</div>
+				<div class="color-card margin-both-24 blue navigation" target-page="start-chat-product">
+					<div class="heading-m white-text">Need something? Let us know.</div>
+					<div class="icon-and-text">
+						<div class="icon-and-text-icon">
+							<img src="assets/images/chat-icon-white.svg">
+						</div>
+						<div class="body-s white-text">Start a new chat</div>
+					</div>
+				</div>
+				<div class="contact-helper-text padding-top-8">
+					<div class="heading-xs padding-bottom-8">Adobe Support chat is available all business week.</div>
+					<div class="body-xs padding-bottom-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
+				</div>
+			</div>
+			<div class="contact-your-success-team white padding-both-24 padding-top-24 padding-bottom-48">
+				<div class="padding-top-24 padding-bottom-24 heading-l">Your Ultimate Success Team</div>
+				
+				<div class="team-member-card-block padding-bottom-32">
+					<div class="">
+						<div class="team-member-icon-small blue margin-right-16"><div class="heading-s white-text">JE</div></div>
+					</div>
+					<div class="contact-team-member-info">
+						<div class="detail-s padding-bottom-8">Technical Account Manager</div>
+						<div class="heading-m padding-bottom-16">First Name Long Last Name</div>
+						<div class="body-m padding-bottom-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						<div class="secondary-button-m">Email</div>
+					</div>
+				</div>
+				<div class="divider-line margin-bottom-32"></div>
+				<div class="team-member-card-block padding-bottom-32">
+					<div class="">
+						<div class="team-member-icon-small magenta margin-right-16"><div class="heading-s white-text">JE</div></div>
+					</div>
+					<div class="contact-team-member-info">
+						<div class="detail-s padding-bottom-8">Technical Account Manager</div>
+						<div class="heading-m padding-bottom-16">First Name Long Last Name</div>
+						<div class="body-m padding-bottom-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						<div class="secondary-button-m">Email</div>
+					</div>
+				</div>
+				<div class="divider-line margin-bottom-32"></div>
+				<div class="team-member-card-block padding-bottom-32">
+					<div class="">
+						<div class="team-member-icon-small yellow margin-right-16"><div class="heading-s black-text">JE</div></div>
+					</div>
+					<div class="contact-team-member-info">
+						<div class="detail-s padding-bottom-8">Technical Account Manager</div>
+						<div class="heading-m padding-bottom-16">First Name Long Last Name</div>
+						<div class="body-m padding-bottom-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						<div class="secondary-button-m">Email</div>
+					</div>
+				</div>
+				<div class="divider-line margin-bottom-32"></div>
+				<div class="team-member-card-block padding-bottom-32">
+					<div class="">
+						<div class="team-member-icon-small purple margin-right-16"><div class="heading-s white-text">JE</div></div>
+					</div>
+					<div class="contact-team-member-info">
+						<div class="detail-s padding-bottom-8">Technical Account Manager</div>
+						<div class="heading-m padding-bottom-16">First Name Long Last Name</div>
+						<div class="body-m padding-bottom-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						<div class="secondary-button-m">Email</div>
+					</div>
+				</div>
+				<div class="divider-line margin-bottom-32"></div>
+				<div class="team-member-card-block">
+					<div class="">
+						<div class="team-member-icon-small pink margin-right-16"><div class="heading-s black-text">JE</div></div>
+					</div>
+					<div class="contact-team-member-info">
+						<div class="detail-s padding-bottom-8">Technical Account Manager</div>
+						<div class="heading-m padding-bottom-16">First Name Long Last Name</div>
+						<div class="body-m padding-bottom-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+						<div class="secondary-button-m">Email</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="contact-call-adobe margin-both-24 margin-top-32 margin-bottom-48">
+				<div class="heading-l">Call Adobe support</div>
+				<div class="body-xl text-link-inline">1 (800) 833-6687</div>
+			</div>
+			<div class="submit-feedback-block margin-both-24  padding-bottom-48 navigation" target-page="submit-feedback">
+				<div class="submit-feedback-image padding-bottom-16"><img src="assets/images/feedback-image_contact.png"></div>
+				<div class="heading-m padding-bottom-16 black-text">Share your experience with us</div>
+				<div class="secondary-button-m" >Submit app feedback</div>
+			</div>
+		</div><!-- Contact pages -->
+
+		<div class="page padding-top-100 padding-both-24" id="start-chat-product" is-animated="true">
+			<div class="top-text padding-bottom-24">
+				<div class="heading-xl">Let's chat.</div>
+				<div class="body-xl">Select a product to get started.</div>
+			</div>
+			<div class="padding-top-24 padding-bottom-24">
+				<div class="simple-product-card padding-both-24 margin-bottom-16 navigation" target-page="start-chat-details">
+					<div class="heading-m" >Adobe Audience Manager</div>
+					<div class=""><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="simple-product-card padding-both-24 margin-bottom-16 navigation" target-page="start-chat-details">
+					<div class="heading-m">Adobe Analytics</div>
+					<div class=""><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="simple-product-card padding-both-24 margin-bottom-16 navigation" target-page="start-chat-details">
+					<div class="heading-m">Adobe Workfront</div>
+					<div class=""><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="simple-product-card padding-both-24 margin-bottom-16 navigation" target-page="start-chat-details">
+					<div class="heading-m">Adobe Target</div>
+					<div class=""><img src="assets/images/right-arrow.svg"></div>
+				</div>
+			</div>
+			<div class="chat-disclaimer">
+				<div class="body-xs">Live chat is currently only supported for the solutions listed here.  For help with other Adobe solutions, you can contact your Technical Account Manager or open a support ticket.</div>
+			</div>
+		</div><!-- end start chat product -->
+		
+
+		<div class="page padding-top-100 " id="start-chat-details" is-animated="true">
+			<div class="chat-details-container margin-both-24">
+				<div class="cd-bubbles  ">
+					<div class="cd-bubble-left margin-bottom-16">
+						<div class="cd-bubble-text body-m light-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</div>
+						<div class="cd-bubble-time body-s">9:27 AM</div>
+					</div>
+					<div class="cd-bubble-right margin-bottom-16">
+						<div class="cd-bubble-text body-m blue white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+						<div class="cd-bubble-time body-s">1:45 PM</div>
+					</div>
+					<form>
+						<textarea class="cd-textarea margin-bottom-16" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. "></textarea>
+					</form>
+					<div class="cd-submit-buttons">
+						<div class="primary-button-m margin-right-16">Send</div>
+						<div class="secondary-button-m"><img class="padding-right-8" src="assets/images/attachment-icon-black.svg">Add attachment</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page padding-top-100" id="submit-feedback" is-animated="true">
+			<div class="margin-both-24">
+				<div class="page-top-section padding-bottom-32">
+					<div class="top-text">
+						<div class="heading-xl padding-bottom-8">Give Feedback</div>
+						<div class="body-m">Help us improve.</div>
+					</div>
+				</div>
+				<div class="give-feedback-block margin-top-32">
+					<div class="gf-rate">
+						<div class="heading-m padding-bottom-16">Rate your experience</div>
+						<div class="gf-emoticons">
+							<div class="gfe-emoticon">
+								<div class="gfe-smiley-gray"><img src="assets/images/emoticon-very-bad-gray.svg"></div>
+								<div class="gfe-smiley-black"><img src="assets/images/emoticon-very-bad-black.svg"></div>
+								<div class="gfe-overlay"></div>
+							</div>
+							<div class="gfe-emoticon">
+								<div class="gfe-smiley-gray"><img src="assets/images/emoticon-bad-gray.svg"></div>
+								<div class="gfe-smiley-black"><img src="assets/images/emoticon-bad-black.svg"></div>
+								<div class="gfe-overlay"></div>
+							</div>
+							<div class="gfe-emoticon">
+								<div class="gfe-smiley-gray"><img src="assets/images/emoticon-neutral-gray.svg"></div>
+								<div class="gfe-smiley-black"><img src="assets/images/emoticon-neutral-black.svg"></div>
+								<div class="gfe-overlay"></div>
+							</div>
+							<div class="gfe-emoticon">
+								<div class="gfe-smiley-gray"><img src="assets/images/emoticon-good-gray.svg"></div>
+								<div class="gfe-smiley-black"><img src="assets/images/emoticon-good-black.svg"></div>
+								<div class="gfe-overlay"></div>
+							</div>
+							<div class="gfe-emoticon">
+								<div class="gfe-smiley-gray"><img src="assets/images/emoticon-very-good-gray.svg"></div>
+								<div class="gfe-smiley-black"><img src="assets/images/emoticon-very-good-black.svg"></div>
+								<div class="gfe-overlay"></div>
+							</div>
+						</div>
+
+						<form>
+							<label class="detail" for="search">LEAVE A COMMENT (optional)</label>
+							<textarea class="textarea-xl body-m black-text margin-bottom-24" name="comment" placeholder="Add your feedback"></textarea>
+						</form>
+						<div class="primary-button-l">Send feedback</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cases pages -->
+		<div class="page padding-top-100" id="cases" is-base="true">
+			<div class="page-top-section margin-both-24 margin-bottom-48">
+				<div class="top-text padding-bottom-32">
+					<div class="heading-xl padding-bottom-8">Let's chat.</div>
+					<div class="body-xl">Select a product to get started.</div>
+				</div>
+				<div class="new-case-updates">
+					<div class="detail padding-bottom-12">new case updates</div>
+					<div class="case-card blue-border white margin-bottom-24 navigation" target-page="case-details">
+						<div class="case-card-left">
+							<div class="case-card-left-bar blue"></div>
+							<div class="padding-left-16">
+								<div class="body-s padding-bottom-8">Updates available</div>
+								<div class="heading-m padding-bottom-8">Case #234567891001</div>
+								<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+							</div>
+						</div>	
+						<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+					</div>
+					<div class="primary-button-l navigation" target-page="open-case-product">Create a new case</div>
+				</div>
+			</div>
+
+			<div class="cases-search margin-both-24 margin-bottom-48">
+				<div class="heading-l padding-bottom-32">Search and filter your cases</div>
+				<div class="cases-search-form">
+					<form >
+						<label class="detail" for="search">Search</label>
+						<input class="body-m black-text margin-bottom-16" type="text" name="search" placeholder="Search all cases">
+						<label class="detail" for="product">Product</label>
+						<select class="body-m black-text margin-bottom-16" id="product" name="product">
+							<option value="au">Adobe Analytics</option>
+							<option value="ca">Adobe Audience Manager</option>
+							<option value="usa">Adobe Target</option>
+							<option value="usa">Adobe Workfront</option>
+						</select>
+						<label class="detail" for="product">View cases</label>
+						<select class="body-m black-text margin-bottom-8" id="product" name="product">
+							<option value="au">My cases (All)</option>
+							<option value="ca">Lorem ipsum</option>
+							<option value="usa">Lorem ipsum</option>
+							<option value="usa">Lorem ipsum</option>
+						</select>
+						<div class="italic-xs">Change organizations for other product entitlements.</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="cases-results margin-both-24">
+				<div class="detail padding-bottom-24">Showing 8 of 36 cases</div>
+				<div class="case-card blue-border white margin-bottom-24 navigation" target-page="case-details">
+					<div class="case-card-left">
+						<div class="case-card-left-bar blue"></div>
+						<div class="padding-left-16">
+							<div class="body-s padding-bottom-8">Updates available</div>
+							<div class="heading-m padding-bottom-8">Case #234567891001</div>
+							<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+						</div>
+					</div>	
+					<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="case-card orange-border white margin-bottom-24 navigation" target-page="case-details">
+					<div class="case-card-left">
+						<div class="case-card-left-bar orange"></div>
+						<div class="padding-left-16">
+							<div class="body-s padding-bottom-8">Open</div>
+							<div class="heading-m padding-bottom-8">Case #234567891001</div>
+							<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+						</div>
+					</div>	
+					<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="case-card orange-border white margin-bottom-24 navigation" target-page="case-details">
+					<div class="case-card-left">
+						<div class="case-card-left-bar orange"></div>
+						<div class="padding-left-16">
+							<div class="body-s padding-bottom-8">Open</div>
+							<div class="heading-m padding-bottom-8">Case #234567891001</div>
+							<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+						</div>
+					</div>	
+					<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="case-card orange-border white margin-bottom-24 navigation" target-page="case-details">
+					<div class="case-card-left">
+						<div class="case-card-left-bar orange"></div>
+						<div class="padding-left-16">
+							<div class="body-s padding-bottom-8">Open</div>
+							<div class="heading-m padding-bottom-8">Case #234567891001</div>
+							<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+						</div>
+					</div>	
+					<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="case-card orange-border white margin-bottom-24 navigation" target-page="case-details">
+					<div class="case-card-left">
+						<div class="case-card-left-bar orange"></div>
+						<div class="padding-left-16">
+							<div class="body-s padding-bottom-8">Open</div>
+							<div class="heading-m padding-bottom-8">Case #234567891001</div>
+							<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+						</div>
+					</div>	
+					<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="case-card green-border white margin-bottom-24 navigation" target-page="case-details">
+					<div class="case-card-left">
+						<div class="case-card-left-bar green"></div>
+						<div class="padding-left-16">
+							<div class="body-s padding-bottom-8">Closed</div>
+							<div class="heading-m padding-bottom-8">Case #234567891001</div>
+							<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+						</div>
+					</div>	
+					<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="case-card green-border white margin-bottom-24 navigation" target-page="case-details">
+					<div class="case-card-left">
+						<div class="case-card-left-bar green"></div>
+						<div class="padding-left-16">
+							<div class="body-s padding-bottom-8">Closed</div>
+							<div class="heading-m padding-bottom-8">Case #234567891001</div>
+							<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+						</div>
+					</div>	
+					<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="case-card green-border white margin-bottom-32 navigation" target-page="case-details">
+					<div class="case-card-left">
+						<div class="case-card-left-bar green"></div>
+						<div class="padding-left-16">
+							<div class="body-s padding-bottom-8">Closed</div>
+							<div class="heading-m padding-bottom-8">Case #234567891001</div>
+							<div class="body-s">Case title lorem ipsum dolor sit sed ut amet…</div>
+						</div>
+					</div>	
+					<div class="case-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+				</div>
+				<div class="secondary-button-l margin-bottom-48">Load more</div>	
+			</div>
+		</div><!-- end cases page -->
+		
+		<!-- open case product  -->
+		<div class="page padding-top-100" id="open-case-product" is-animated="true">
+
+			<div class="ocp-container margin-both-24">
+
+				<div class="top-text padding-bottom-24">
+					<div class="heading-xl">Open a case.</div>
+					<div class="body-xl">Select a product to get started.</div>
+				</div>
+				<div class="padding-top-24 padding-bottom-24">
+					<div class="simple-product-card padding-both-24 margin-bottom-16 navigation" target-page="open-case-details">
+						<div class="heading-m">Adobe Audience Manager</div>
+						<div class=""><img src="assets/images/right-arrow.svg"></div>
+					</div>
+					<div class="simple-product-card padding-both-24 margin-bottom-16 navigation" target-page="open-case-details">
+						<div class="heading-m">Adobe Analytics</div>
+						<div class=""><img src="assets/images/right-arrow.svg"></div>
+					</div>
+					<div class="simple-product-card padding-both-24 margin-bottom-16 navigation" target-page="open-case-details">
+						<div class="heading-m">Adobe Workfront</div>
+						<div class=""><img src="assets/images/right-arrow.svg"></div>
+					</div>
+					<div class="simple-product-card padding-both-24 margin-bottom-16 navigation" target-page="open-case-details">
+						<div class="heading-m">Adobe Target</div>
+						<div class=""><img src="assets/images/right-arrow.svg"></div>
+					</div>
+				</div>
+
+			</div>
+		</div><!-- end open case product  -->
+
+		<!-- open case details  -->
+		<div class="page padding-top-100" id="open-case-details" is-animated="true">
+
+			<div class="ocd-container margin-both-24">
+				<div class=""></div>
+				<div class=""></div>
+				<div class=""></div>
+
+				<div class="page-top-section margin-bottom-32">
+					<div class="top-text">
+						<div class="heading-xl padding-bottom-8">Let’s open a case.</div>
+						<div class="body-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+					</div>
+				</div>
+				<div class="ocd-form">
+					<div class="heading-s padding-bottom-24">Adobe Analytics</div>
+
+					<label class="detail" for="case-title">Case title</label>
+					<input id="input-alert" class="body-m black-text margin-bottom-16" type="text" name="case-title" placeholder="Search all cases">
+					<div id="input-warning-text">Please enter case title</div>
+					
+					<label class="detail" for="search">Case description</label>
+					<textarea class="textarea-xl margin-bottom-32" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. "></textarea>	
+
+
+					<div class="detail label-div padding-bottom-12">Priority<img class="inline-icon padding-left-8" src="assets/images/info-icon.svg"></div>
+					<div class="radio-button-set margin-bottom-16">
+						<div class="radio-button margin-bottom-16" state="on">
+							<div class="rb-check">
+								<div class="rb-check-bg"></div>
+								<div class="rb-check-active"></div>
+								<div class="rb-check-dot"></div>
+							</div>
+							<div class="rb-label">
+								<div class="heading-m">P4 - Minor</div>
+								<div class="body-s">Minimal or no interruptions to normal operations.</div>
+							</div>
+						</div>
+						<div class="radio-button margin-bottom-16" state="off">
+							<div class="rb-check">
+								<div class="rb-check-bg"></div>
+								<div class="rb-check-active"></div>
+								<div class="rb-check-dot"></div>
+							</div>
+							<div class="rb-label">
+								<div class="heading-m">P3 - Important</div>
+								<div class="body-s">Interruptions to normal operations.</div>
+							</div>
+						</div>
+						<div class="radio-button margin-bottom-16" state="off">
+							<div class="rb-check">
+								<div class="rb-check-bg"></div>
+								<div class="rb-check-active"></div>
+								<div class="rb-check-dot"></div>
+							</div>
+							<div class="rb-label">
+								<div class="heading-m">P2 - Urgent</div>
+								<div class="body-s">Serious interruptions to normal operations.</div>
+							</div>
+						</div>
+						<div class="radio-button margin-bottom-16" state="off">
+							<div class="rb-check">
+								<div class="rb-check-bg"></div>
+								<div class="rb-check-active"></div>
+								<div class="rb-check-dot"></div>
+							</div>
+							<div class="rb-label">
+								<div class="heading-m">P1 - Critical</div>
+								<div class="body-s">Outage or extremely serious interruptions to operations.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail label-div padding-bottom-12">Business impact<img class="inline-icon padding-left-8" src="assets/images/info-icon.svg"></div>
+					<div class="radio-button-set margin-bottom-32">
+						<div class="radio-button margin-bottom-16" state="on">
+							<div class="rb-check">
+								<div class="rb-check-bg"></div>
+								<div class="rb-check-active"></div>
+								<div class="rb-check-dot"></div>
+							</div>
+							<div class="rb-label">
+								<div class="heading-m">Small</div>
+								<div class="body-s">One or two users impacted.</div>
+							</div>
+						</div>
+						<div class="radio-button margin-bottom-16" state="off">
+							<div class="rb-check">
+								<div class="rb-check-bg"></div>
+								<div class="rb-check-active"></div>
+								<div class="rb-check-dot"></div>
+							</div>
+							<div class="rb-label">
+								<div class="heading-m">Medium</div>
+								<div class="body-s">A specific group of users impacted.</div>
+							</div>
+						</div>
+						<div class="radio-button margin-bottom-16" state="off">
+							<div class="rb-check">
+								<div class="rb-check-bg"></div>
+								<div class="rb-check-active"></div>
+								<div class="rb-check-dot"></div>
+							</div>
+							<div class="rb-label">
+								<div class="heading-m">Large</div>
+								<div class="body-s">Majority of users impacted.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="detail padding-bottom-8">Add watchers (optional)</div>
+					<div class="body-s margin-bottom-24">Add up to 10 user emails separated by a comma.</div>
+					<div class="add-watchers margin-bottom-32">
+						<div class="body-m padding-bottom-12">Madge_Schoen0@yahoo.com,</div>
+						<div class="tag body-m margin-bottom-8">Kayle.Smitham62@yahoo.com</div>
+						<div class="tag body-m margin-bottom-8">Gussie94@hotmail.com</div>
+						<div class="tag body-m margin-bottom-8">Travin_Bayer4@gmail.com</div>
+						<div class="tag body-m red-tag margin-bottom-8">Deven.Lueilwitz35@hotmail.com</div>
+					</div>
+					<div class="add-attachments margin-bottom-32">
+						<div class="attachment-drop margin-bottom-12">
+							<div class="heading-m label-div"><img class="inline-icon padding-right-8" src="assets/images/attachment-icon-blue.svg">Add attachment</div>
+						</div>
+						<div class="attachment-collection margin-bottom-8">
+							<div class="attachment-image" id="attachment-image-1">
+								<img class="" src="assets/images/remove-item-icon.svg">
+							</div>
+							<div class="attachment-image" id="attachment-image-2">
+								<img class="" src="assets/images/remove-item-icon.svg">
+							</div>
+						</div>	
+					</div>
+					<div id="submit-case-button" class="primary-button-l margin-bottom-48">Submit case</div>
+				</div>
+			</div>
+		</div><!-- end open case details  -->
+
+		<div class="page " id="case-details" is-animated="true">
+				<div class="page-top-section margin-both-24 margin-bottom-48">
+					<div class="top-text">
+						<div class="label-div margin-bottom-16"><div class="status-dot orange margin-right-8"></div>Open</div>
+						<div class="heading-xl padding-bottom-8">Case title cons adipiscing elit, sed do eiusmod tempor.</div>
+						<div class="body-m">Case description lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dolore magna aliqua.</div>
+					</div>
+				</div>
+				<div class="cd-content">
+					<div class="cd-content-nav padding-both-24 margin-bottom-24">
+						<div class="cdc-nav-button-container">
+							<div class="cdc-nav-button body-m margin-right-32" id="cdc-updates">Case updates</div>
+							<div class="cdc-nav-button body-m" id="cdc-details">Case details</div>
+						</div>
+						<div class="cdc-nav-bar-container"><div class="cdc-nav-active-bar"></div></div>
+					</div>
+					<div class="cd-content-container">
+						<!-- cd-content-updates  -->
+						<div id="cd-content-updates" class="">
+							<div class="padding-both-24 padding-bottom-48">
+								
+								<textarea class="textarea-xl margin-bottom-16" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad. "></textarea>
+								<div class="inline-buttons margin-bottom-32">
+									<div class="primary-button-m margin-right-16">Submit</div>
+									<div class="secondary-button-m label-div"><img class="button-image-attachment padding-right-8" src="assets/images/attachment-icon-gray.svg">Add attachment</div>
+								</div>
+								<div class="divider-line margin-bottom-32"></div>
+
+								<div class="basic-card white margin-bottom-24">
+									<div class="basic-card-top-bar pink"></div>
+									<div class="basic-card-info padding-both-16 padding-top-24 padding-bottom-24">
+										<div class="small-icon-header">
+											<div class="sih-icon">
+												<div class="team-member-icon-xs pink margin-right-8">
+													<div class="heading-xs white-text">JE</div>
+												</div>
+											</div>
+											<div class="sih-info">
+												<div class="heading-m">Madge Schoen</div>
+												<div class="detail-s padding-bottom-8">Support Engineer</div>
+											</div>
+										</div>
+										<div class="body-s padding-bottom-8"><span class="blue-text">@Kayle Smitham</span> lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+										<div class="hard-right body-s">Jan 8, 2024  11:42 AM</div>
+									</div>
+								</div>
+
+								<div class="basic-card white margin-bottom-32">
+									<div class="basic-card-top-bar yellow"></div>
+									<div class="basic-card-info padding-both-16 padding-top-24 padding-bottom-24">
+										<div class="small-icon-header">
+											<div class="sih-icon">
+												<div class="team-member-icon-xs yellow margin-right-8">
+													<div class="heading-xs">JE</div>
+												</div>
+											</div>
+											<div class="sih-info">
+												<div class="heading-m">Kayle Smitham</div>
+												<div class="detail-s padding-bottom-8">User Admin</div>
+											</div>
+										</div>
+										<div class="body-s padding-bottom-16">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+										<div class="attachment-collection padding-bottom-16">
+											<img class="padding-right-8" src="assets/images/attachment-image-small-1.png">
+											<img class="" src="assets/images/attachment-image-small-2.png">
+										</div>
+										<div class="hard-right body-s">Jan 8, 2024  11:42 AM</div>
+									</div>
+								</div>
+
+								<div class="body-s med-grey-text"><span class="heading-s med-grey-text">Madge Schoen</span> changed this case to <span class="heading-s med-grey-text">“Open”</span>.</div>
+								<div class="body-s med-grey-text padding-bottom-24">Jan 6, 2024  8:05 AM</div>
+								
+								<div class="body-s med-grey-text"><span class="heading-s med-grey-text">Madge Schoen</span> has been assigned to your case.</div>
+								<div class="body-s med-grey-text padding-bottom-32">Jan 6, 2024  8:01 AM</div>
+								
+								<div class="divider-line margin-bottom-32"></div>
+
+								<div class="body-s med-grey-text"><span class="heading-s med-grey-text">Derek McCullough</span> added <span class="heading-s med-grey-text">Kayle Smitham, Adolphus Gussie</span> and <span class="heading-s med-grey-text">Travin Bayer</span> to the watch list.</div>
+								<div class="body-s med-grey-text padding-bottom-32">Jan 4, 2024  4:34 PM</div>
+								
+								<div class="basic-card white margin-bottom-32">
+									<div class="basic-card-top-bar magenta"></div>
+									<div class="basic-card-info padding-both-16 padding-top-24 padding-bottom-24">
+										<div class="small-icon-header">
+											<div class="sih-icon">
+												<div class="team-member-icon-xs magenta margin-right-8">
+													<div class="heading-xs">DM</div>
+												</div>
+											</div>
+											<div class="sih-info">
+												<div class="heading-m">Derek McCullough</div>
+												<div class="detail-s padding-bottom-8">User Admin</div>
+											</div>
+										</div>
+										<div class="body-s padding-bottom-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+										<div class="hard-right body-s">Jan 3, 2024  9:57 AM</div>
+									</div>
+								</div>
+								<div class="body-s med-grey-text"><span class="heading-s med-grey-text">Derek McCullough</span> opened a ticket.</div>
+								<div class="body-s med-grey-text padding-bottom-32">Jan 3, 2024  9:38 AM</div>
+								
+								<div class="divider-line-with-text">
+									<div class="dl-line"></div>
+									<div class="dl-text padding-both-8">END</div>
+									<div class="dl-line"></div>
+								</div>
+							</div>
+						</div><!-- end cd-content-updates  -->
+						<!-- cd-content-details  -->
+						<div id="cd-content-details" class="padding-top-16 padding-bottom-48">
+							<div class="margin-both-24 ">
+								<div class="detail padding-bottom-8">organization:</div>
+								<div class="body-l med-grey-text padding-bottom-32">Townsend Medical</div>
+								
+								<div class="detail padding-bottom-8">contact name:</div>
+								<div class="body-l med-grey-text padding-bottom-32">Derek McCullough</div>
+								
+								<div class="detail padding-bottom-8">Product:</div>
+								<div class="body-l med-grey-text padding-bottom-32">Adobe Analytics</div>
+								
+								<div class="detail label-div padding-bottom-8">Priority<img class="inline-icon padding-left-8" src="assets/images/info-icon.svg"></div>
+								<div class="heading-m med-grey-text">P2 - Urgent</div>
+								<div class="body-s med-grey-text padding-bottom-32">Serious interruptions to normal operations.</div>
+								<div class="detail label-div padding-bottom-8">Business impact<img class="inline-icon padding-left-8" src="assets/images/info-icon.svg"></div>
+								<div class="heading-m med-grey-text">Medium</div>
+								<div class="body-s med-grey-text padding-bottom-32">A specific group of users impacted.</div>
+							
+								<div class="cd-watchers">
+									<div class="cd-watchers-header">
+										<div class="detail">watchers</div>
+										<div class="cd-watchers-edit padding-bottom-8">
+											<div class="">Edit</div>
+											<div class=""><img class="padding-left-8" src="assets/images/edit-icon.svg"></div>
+										</div>
+									</div>
+									<div class="basic-card white margin-bottom-32">
+										<div class="basic-card-info">
+											<div class="cd-watcher">
+												<div class="body-s med-grey-text">Kayle.Smitham62@yahoo.com</div>
+												<div class="secondary-button-s">Remove</div>
+											</div>
+											<div class="divider-line"></div>
+											<div class="cd-watcher">
+												<div class="body-s med-grey-text">Gussie94@gmail.com</div>
+												<div class="secondary-button-s">Remove</div>
+											</div>
+											<div class="divider-line"></div>
+											<div class="cd-watcher">
+												<div class="body-s med-grey-text">Travin_Bayer4@gmail.com</div>
+												<div class="secondary-button-s">Remove</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+
+								<div class="detail padding-bottom-8">Attachments</div>
+								<div class="add-attachments margin-bottom-48">
+									<div class="attachment-drop margin-bottom-12">
+										<div class="heading-m label-div"><img class="inline-icon padding-right-8" src="assets/images/attachment-icon-blue.svg">Add attachment</div>
+									</div>
+									<div class="attachment-collection margin-bottom-8">
+										<div class="attachment-image" id="attachment-image-1">
+											<img class="" src="assets/images/remove-item-icon.svg">
+										</div>
+										<div class="attachment-image" id="attachment-image-2">
+											<img class="" src="assets/images/remove-item-icon.svg">
+										</div>
+									</div>	
+								</div>
+								<div class="100-percent-wide">
+									<div class="secondary-button-l margin-bottom-16">Escalate to management</div>
+									<div class="primary-button-l">Close case</div>
+								</div>
+							</div>
+						</div><!-- end cd-content-details  -->
+					</div>
+				</div>
+		</div>
+
+		<!-- Status page -->
+		<div class="page padding-top-100" id="status" is-base="true">
+			<div class="page-top-section margin-both-24 margin-bottom-32">
+				<div class="top-text">
+					<div class="heading-xl padding-bottom-8">View your organizations system status</div>
+					<div class="body-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+				</div>
+			</div>
+
+			<div class="system-status-products margin-both-24 margin-bottom-48">
+				<div class="heading-l padding-bottom-32">My Experience Cloud products</div>
+				<div class="CARDS">
+					<div class="system-status-card margin-bottom-16 red-border navigation" target-page="status-details">
+						<div class="status-card-left">
+							<div class="status-card-left-bar red"></div>
+							<div class="padding-both-16">
+								<div class="heading-s">Adobe Target</div>
+								<div class="body-s">1 Major issue in progress</div>
+							</div>
+						</div>
+						<div class="status-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+					</div>
+
+					<div class="system-status-expand margin-bottom-16 green-border" state="open" open-height="200">
+						<div class="sse-left-green-bar green"></div>
+						<div class="sse-content">
+							<div class="sse-top expandable">
+								<div class="sse-top-left">
+									<div class="sse-top-info">
+										<div class="heading-s">Adobe Audience Manager</div>
+										<div class="issue-status body-s">Available</div>
+									</div>
+								</div>
+								<div class="sse-top-right">
+									<div class="body-s sse-show-text">Show more</div>
+								</div>
+							</div>
+
+							<div class="sse-middle">
+								<div class="sse-middle-content">
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Event Subscription</div>
+												<div class="body-s ">2 Minor issues in progress</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot orange"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Event Subscription</div>
+												<div class="body-s ">2 Minor issues in progress</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>	
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot orange"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Event Subscription</div>
+												<div class="body-s ">2 Minor issues in progress</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+								</div>	
+							</div>
+							<div class="sse-bottom">
+							</div>
+						</div>
+					</div><!-- end expandable card -->
+
+
+					<div class="system-status-card margin-bottom-16 green-border navigation" target-page="status-details">
+						<div class="status-card-left">
+							<div class="status-card-left-bar green"></div>
+							<div class="padding-both-16">
+								<div class="heading-s">Adobe Analytics</div>
+								<div class="body-s">Available</div>
+							</div>
+						</div>
+						<div class="status-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+					</div>
+					<div class="system-status-card margin-bottom-16 orange-border navigation" target-page="status-details">
+						<div class="status-card-left">
+							<div class="status-card-left-bar orange"></div>
+							<div class="padding-both-16">
+								<div class="heading-s">Adobe Audience Manager</div>
+								<div class="body-s">Available</div>
+							</div>
+						</div>
+						<div class="status-card-arrow padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+					</div>
+					<!-- expandable card -->
+					<div class="system-status-expand margin-bottom-16 orange-border" state="open" open-height="200">
+						<div class="sse-left-green-bar orange"></div>
+						<div class="sse-content">
+							<div class="sse-top expandable">
+								<div class="sse-top-left">
+									<div class="sse-top-info">
+										<div class="heading-s">Adobe Workfront</div>
+										<div class="issue-status body-s">2 Minor issues in progress</div>
+									</div>
+								</div>
+								<div class="sse-top-right">
+									<div class="body-s sse-show-text">Show more</div>
+								</div>
+							</div>
+
+							<div class="sse-middle">
+								<div class="sse-middle-content">
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Event Subscription</div>
+												<div class="body-s ">2 Minor issues in progress</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Fusion</div>
+												<div class="body-s ">Available</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>	
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot orange"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Proofing</div>
+												<div class="body-s ">1 Minor issues in progress</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Scenario Planner</div>
+												<div class="body-s ">Available</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Workfront Analytics</div>
+												<div class="body-s ">Available</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Workfront Application</div>
+												<div class="body-s ">Available</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Workfront Goals</div>
+												<div class="body-s ">Available</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Workfront Integrations</div>
+												<div class="body-s ">Available</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+
+
+
+								</div>	
+							</div>
+							<div class="sse-bottom">
+							</div>
+						</div>
+					</div><!-- end expandable card -->
+
+					<!-- expandable card -->
+					<div class="system-status-expand margin-bottom-16 orange-border" state="open" open-height="200">
+						<div class="sse-left-green-bar orange"></div>
+						<div class="sse-content">
+							<div class="sse-top expandable">
+								<div class="sse-top-left">
+									<div class="sse-top-info">
+										<div class="heading-s">Adobe Workfront</div>
+										<div class="issue-status body-s">2 Minor issues in progress</div>
+									</div>
+								</div>
+								<div class="sse-top-right">
+									<div class="body-s sse-show-text">Show more</div>
+								</div>
+							</div>
+
+							<div class="sse-middle">
+								<div class="sse-middle-content">
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot green"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Event Subscription</div>
+												<div class="body-s ">2 Minor issues in progress</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot orange"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Event Subscription</div>
+												<div class="body-s ">2 Minor issues in progress</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>	
+									<div class="sse-sub-card white navigation" target-page="status-details">
+										<div class="sse-sub-card-left padding-top-16">
+											<div class="sse-sub-card-dot orange"></div>
+											<div class="sse-sub-card-info">
+												<div class="body-m">Event Subscription</div>
+												<div class="body-s ">2 Minor issues in progress</div>
+											</div>
+										</div>
+										<div class="sse-sub-card-right padding-right-24"><img src="assets/images/right-arrow.svg"></div>
+									</div>
+								</div>	
+							</div>
+							<div class="sse-bottom">
+							</div>
+						</div>
+					</div><!-- end expandable card -->
+				</div>
+			</div>
+			<div class="submit-feedback-block margin-both-24 padding-bottom-48">
+				<div class="submit-feedback-image padding-bottom-16"><img src="assets/images/status-notification-image-subscribe.png"></div>
+				<div class="heading-m padding-bottom-16 black-text">Stay in the loop</div>
+				<div class="body-m center-text padding-bottom-16">To receive notifications regarding service issues and scheduled maintenance periods, please subscribe to <a class="text-link-inline" href="https://status.adobe.com/"> status.adobe.com</a>. For information on how to subscribe, please tap here.</div>
+				<div class="secondary-button-m" onclick="location.href='https://status.adobe.com/';" style="cursor: pointer;">Subscribe</div>
+			</div>
+		</div><!-- end status page -->
+		
+		<!-- Status detail page -->
+		<div class="page" id="status-details" is-animated="true">
+			<div class="margin-bottom-48">
+				<div class="margin-both-24">
+					
+					
+				</div>
+			</div>
+
+
+			<div class="basic-card orange-border margin-both-24 white">
+				<div class="sw-top-bar orange"></div>
+				<div class="sw-info margin-both-24 padding-top-16 padding-bottom-24">
+					<div class="padding-bottom-8"><img src="assets/images/alert-icon.svg"></div>
+					<div class="heading-s">Adobe Workfront</div>
+					<div class="heading-s">Issue<div class="body-s">#00000000000</div></div>
+					<div class="heading-s">Status<div class="body-s">Opened</div></div>
+					<div class="divider-line margin-top-24 margin-bottom-24"></div>
+					<div class="heading-s">Cloud<div class="body-s">Experience Cloud</div></div>
+					<div class="heading-s">Regions<div class="body-s">Americas</div></div>
+					<div class="heading-s">Expected duration:</div>
+					<div class="body-s">Today 9:00 AM – Today 2:00 PM (MST)</div>
+				</div>
+				<div class="sw-subscribe margin-both-24 padding-bottom-24">
+					<div class="body-xs padding-bottom-8">Follow updates of this case via email</div>
+					<div class="secondary-button-m"><img class="padding-right-8" src="assets/images/outside-link-icon-gray.svg">Subscribe</div>
+				</div>
+			</div>
+
+			
+			<div class="divider-line-with-text margin-both-24 margin-top-32 margin-bottom-32">
+				<div class="dl-line"></div>
+				<div class="dl-text margin-both-8">SOLUTION STATUS</div>
+				<div class="dl-line"></div>
+			</div>
+								
+
+			<div class="basic-card margin-both-24 white margin-bottom-48">
+				<div class="sw-info margin-both-24 padding-top-16 padding-bottom-24">
+					<div class="heading-m">Adobe Workfront</div>
+					<div class="body-m padding-bottom-24">Today 1:30 AM (EST)</div>
+					<div class="heading-s">Impact type:<div class="body-s">Urgent</div></div>
+					<div class="heading-s">Impact scope:<div class="body-s">This maintenance event may not affect all customers.</div></div>
+					<div class="heading-s">Services impacted:<div class="body-s">Proofing (Proof)</div></div>
+					<div class="heading-s">Impact update:<div class="body-s">We’re investigating a performance issue.</div></div>
+					
+				</div>
+				
+			</div>
+		</div><!-- end status detail page -->
+	</div> <!-- end all pages -->
+
+	
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

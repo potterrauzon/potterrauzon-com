@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="418" height="828" viewBox="0 0 418 828">
+  <defs>
+    <mask id="screenHole" maskUnits="userSpaceOnUse" x="0" y="0" width="418" height="828">
+      <rect x="0" y="0" width="418" height="828" fill="#ffffff"/>
+      <rect x="14" y="14" width="390" height="800" rx="24" fill="#000000"/>
+    </mask>
+  </defs>
+
+  <!-- side buttons (behind the frame, so only the protruding tab shows) -->
+  <rect x="1" y="171" width="4" height="28" rx="2" fill="rgb(205,205,210)"/>
+  <rect x="1" y="224" width="4" height="56" rx="2" fill="rgb(205,205,210)"/>
+  <rect x="1" y="294" width="4" height="56" rx="2" fill="rgb(205,205,210)"/>
+  <rect x="413" y="233" width="4" height="88" rx="2" fill="rgb(205,205,210)"/>
+
+  <!-- bezel rings, masked with a rounded hole where the video shows through -->
+  <g mask="url(#screenHole)">
+    <rect x="3" y="3" width="412" height="822" rx="35" fill="rgb(224,224,229)"/>
+    <rect x="4" y="4" width="410" height="820" rx="34" fill="#000000" fill-opacity="0.08"/>
+    <rect x="5" y="5" width="408" height="818" rx="33" fill="rgb(252,252,253)"/>
+  </g>
+
+  <!-- camera cutout and home indicator, drawn over the transparent video area -->
+  <rect x="160" y="26" width="98" height="26" rx="13" fill="rgb(20,20,22)"/>
+  <rect x="149" y="802" width="120" height="5" rx="2.5" fill="#000000" fill-opacity="0.35"/>
+</svg>

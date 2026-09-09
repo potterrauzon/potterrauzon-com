@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Commerce — Ryan Potter</title>
+<meta name="description" content="A brand and marketing site built as a kit of parts: a small set of reusable section types, one two-voice type system, and an indigo-and-lime palette that hold a very long page together as one confident brand."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../assets/styles/site.css"/>
+<script>document.documentElement.classList.add('js-enabled');</script>
+<style>
+/* ============================================================
+   Commerce page-local media components
+   (browser-window figure · 16:9 scroll-window)
+   Uses shared tokens: --line --line-2 --white --paper-2 --faint
+   --ink --ink-2 --muted --accent --mono
+   ============================================================ */
+
+.media-figure{ margin:22px 0 0; }
+.media-figure figcaption{
+  font-family:var(--mono); font-size:11.5px; line-height:1.62; letter-spacing:.02em;
+  color:var(--faint); margin-top:13px; max-width:76ch;
+}
+.media-figure figcaption strong{ color:var(--ink-2); font-weight:600; }
+.scroll-hint{
+  font-family:var(--mono); font-size:10.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--faint); margin-top:10px; display:inline-flex; gap:7px; align-items:center;
+}
+
+/* ---- Browser-window figure : Normal images, shown in full ---- */
+.browser-window{
+  border:1px solid var(--line); border-radius:10px; overflow:hidden;
+  background:var(--white);
+}
+.browser-chrome{
+  display:flex; align-items:center; gap:8px;
+  padding:12px 15px; border-bottom:1px solid var(--line); background:var(--paper-2);
+}
+.browser-chrome i{ width:10px; height:10px; border-radius:50%; background:var(--line-2); display:block; }
+.browser-chrome i:nth-child(1){ background:#E5544B; }
+.browser-chrome i:nth-child(2){ background:#E6B02E; }
+.browser-chrome i:nth-child(3){ background:#4BB24B; }
+.browser-window img{ width:100%; height:auto; display:block; }
+
+/* ---- 16:9 scroll-window : Long images (height > 1200px) ---- */
+.scroll-window{
+  position:relative; aspect-ratio:16/9; overflow-y:auto; overflow-x:hidden;
+  border:1px solid var(--line); border-radius:10px; background:var(--white);
+  -webkit-overflow-scrolling:touch;
+}
+.scroll-window img{ width:100%; height:auto; display:block; }
+/* faint fade at the foot as a scroll affordance */
+.scroll-window::after{
+  content:""; position:sticky; bottom:0; left:0; display:block;
+  height:54px; margin-top:-54px; pointer-events:none;
+  background:linear-gradient(to top, rgba(21,23,28,0.10), rgba(21,23,28,0));
+}
+
+@media (max-width:720px){
+  .scroll-window{ aspect-ratio:4/3; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+  <div class="header-left">
+  <a class="wordmark" href="../index.html" aria-label="Ryan Potter home">
+    <span>Ryan&nbsp;Potter</span>
+  </a>
+  <nav class="navigation-links">
+        <a href="../work.html" class="is-active">Work</a>
+        <a href="../about.html">About</a>
+        <a href="../writing.html">Writing</a>
+      </nav>
+  </div>
+  <div class="header-right">
+    <span class="tag-badge"><span class="status-dot"></span>Available · Q3 2026</span>
+    <button class="menu-toggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 6h16M3 11h16M3 16h16"/></svg></button>
+  </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ── Project header: title left · details right ── -->
+  <section class="content-wrapper project-header">
+    <a class="back-link fade-up" href="../work.html">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 8H3M7 4L3 8l4 4"/></svg>
+      All work
+    </a>
+    <div class="project-header-grid">
+      <div class="project-header-main">
+        <div class="eyebrow-label fade-up" style="margin-bottom:22px;">Project 08 &nbsp;/&nbsp; BRAND + WEB &nbsp;/&nbsp; 2026</div>
+        <h1 class="project-title"><span class="reveal-line"><span>Commerce</span></span></h1>
+        <p class="page-intro fade-up">A site this size gets away from you. There were three products to speak for, and pages long enough that a reader loses the thread partway down. So we stopped drawing pages and built pieces instead, a handful of them, made once and used again wherever they fit. A rounded face for the headlines, a plain one for the rest, indigo underneath, and lime held back for the one place that has to be seen.</p>
+        <div class="project-tags fade-up">
+          <span class="tag-badge">Brand</span>
+          <span class="tag-badge">Marketing Site</span>
+          <span class="tag-badge">Design System</span>
+        </div>
+      </div>
+      <aside class="project-header-sidebar fade-up">
+        <span class="section-marker"><span class="accent-slash">//</span> Details</span>
+        <div class="fact-list" style="margin-top:18px;">
+          <div class="fact-row"><span class="meta-key">Client</span><span class="meta-value">Commerce</span></div>
+          <div class="fact-row"><span class="meta-key">Role</span><span class="meta-value">Senior Director, Global Web Experience</span></div>
+          <div class="fact-row"><span class="meta-key">Timeline</span><span class="meta-value">2026</span></div>
+          <div class="fact-row"><span class="meta-key">Scope</span><span class="meta-value">Corporate marketing site</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ── Body: overview + story beats ── -->
+  <section class="content-wrapper project-content">
+
+    <!-- Beat 1 -->
+    <div class="project-section scroll-reveal" style="margin-top:64px;">
+      <figure class="media-figure">
+        <div class="browser-window">
+          <div class="browser-chrome"><i></i><i></i><i></i></div>
+          <img src="../assets/images/projects/commerce/homepage-hero.png" alt="Commerce hero pattern: one highlighted phrase, a two-column split, and generous restraint"/>
+        </div>
+      </figure>
+    </div>
+
+    <!-- Beat 2 -->
+    <div class="project-section scroll-reveal" style="margin-top:64px;">
+      <figure class="media-figure">
+        <div class="browser-window">
+          <div class="browser-chrome"><i></i><i></i><i></i></div>
+          <img src="../assets/images/projects/commerce/copy-and-stats.png" alt="An eyebrow, a statement headline, and a four-up stat row set in oversized numerals"/>
+        </div>
+      </figure>
+    </div>
+
+    <!-- Beat 3 -->
+    <div class="project-section scroll-reveal" style="margin-top:64px;">
+      <figure class="media-figure">
+        <div class="browser-window">
+          <div class="browser-chrome"><i></i><i></i><i></i></div>
+          <img src="../assets/images/projects/commerce/commerce_agentic-commerce.png" alt="A full-bleed dark hero with centered type and a single gradient wordmark"/>
+        </div>
+      </figure>
+    </div>
+
+    <!-- Beat 4 -->
+    <div class="project-section scroll-reveal" style="margin-top:64px;">
+      <figure class="media-figure">
+        <div class="browser-window">
+          <div class="browser-chrome"><i></i><i></i><i></i></div>
+          <img src="../assets/images/projects/commerce/50-50-split.png" alt="The 50/50 split up close: fixed columns and a steady vertical rhythm across two stacked instances"/>
+        </div>
+      </figure>
+    </div>
+
+    <!-- Beat 5 -->
+    <div class="project-section scroll-reveal" style="margin-top:64px;">
+      <figure class="media-figure">
+        <div class="browser-window">
+          <div class="browser-chrome"><i></i><i></i><i></i></div>
+          <img src="../assets/images/projects/commerce/commerce-momentum.png" alt="A near-empty dark band with one large statement and a stippled texture"/>
+        </div>
+      </figure>
+    </div>
+
+    <!-- Beat 6 -->
+    <div class="project-section scroll-reveal" style="margin-top:64px;">
+      <figure class="media-figure">
+        <div class="scroll-window">
+          <img src="../assets/images/projects/commerce/partner-program-long.png" alt="The full Partner Program page composed entirely from the existing kit of parts"/>
+        </div>
+        <span class="scroll-hint">Scroll ↕ inside</span>
+      </figure>
+    </div>
+
+    <!-- Beat 7 -->
+    <div class="project-section scroll-reveal" style="margin-top:64px;">
+      <figure class="media-figure">
+        <div class="scroll-window">
+          <img src="../assets/images/projects/commerce/homepage-long.png" alt="The full homepage scroll: alternating 50/50s, a dark band, and a card row on one fixed grid"/>
+        </div>
+        <span class="scroll-hint">Scroll ↕ inside</span>
+      </figure>
+    </div>
+
+    <!-- Team -->
+    <div class="project-section scroll-reveal" style="margin-top:64px;">
+      <h3>Team</h3>
+      <div class="team-grid">
+
+        <div class="team-member">
+          <div class="team-name">Alicia Herber</div>
+          <div class="team-role">Creative Director</div>
+          <a class="team-linkedin" href="https://www.linkedin.com/in/aliciaherber/" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="team-member">
+          <div class="team-name">Devin Rogers</div>
+          <div class="team-role">Design Manager</div>
+          <a class="team-linkedin" href="https://www.linkedin.com/in/devrog/" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="team-member">
+          <div class="team-name">Ryan Sheridan</div>
+          <div class="team-role">Principal Designer, Design Systems</div>
+          <a class="team-linkedin" href="https://www.linkedin.com/in/ryansheridandesign/" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="team-member">
+          <div class="team-name">Juan Roque</div>
+          <div class="team-role">Interactive Art Director</div>
+          <a class="team-linkedin" href="https://www.linkedin.com/in/jc-roque/" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="team-member">
+          <div class="team-name">Josh Jennings</div>
+          <div class="team-role">Senior Web Strategy Manager</div>
+          <a class="team-linkedin" href="https://www.linkedin.com/in/jenningscreate/" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="team-member">
+          <div class="team-name">Shelley Kilpatrick</div>
+          <div class="team-role">Senior Manager, Content Marketing</div>
+          <a class="team-linkedin" href="https://www.linkedin.com/in/shelleykilpatrick/" target="_blank" rel="noopener noreferrer">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── Next project ── -->
+  <section class="content-wrapper">
+    <div class="next-project scroll-reveal">
+      <a href="avaya.html">
+        <div>
+          <div class="small-label">Next project</div>
+          <div class="next-name">Avaya Cloud Portal</div>
+          <div class="index-label" style="margin-top:8px;">WEB APP · 2019</div>
+        </div>
+        <span class="arrow-icon"><svg width="40" height="40" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer scroll-reveal" id="contact">
+  <div class="content-wrapper">
+    <div class="footer-top">
+      <div class="footer-call-to-action">Got something worth building carefully? <span class="accent-text">I'd like to hear about it.</span></div>
+      <div class="footer-columns">
+        <div class="footer-column"><h5>Sitemap</h5><a href="../work.html">Work</a><a href="../about.html">About</a><a href="../writing.html">Writing</a></div>
+        <div class="footer-column"><h5>Elsewhere</h5><a href="https://github.com/potterrauzon/" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/potterrauzon/" target="_blank" rel="noopener">LinkedIn</a></div>
+        <div class="footer-column"><h5>Contact</h5><p>Reach out on LinkedIn for inquiries.</p></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ryan Potter</span>
+      <span>Designed &amp; built in Salt Lake City, UT · 40.7608°N 111.8910°W</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/scripts/animation-engine.js"></script>
+<script src="../assets/scripts/site-data.js"></script>
+<script src="../assets/scripts/site-views.js"></script>
+<script src="../assets/scripts/hero-canvas.js"></script>
+<script src="../assets/scripts/site-animations.js"></script>
+<script src="../assets/scripts/page-transitions.js"></script>
+<script src="../assets/scripts/main.js"></script>
+</body>
+</html>

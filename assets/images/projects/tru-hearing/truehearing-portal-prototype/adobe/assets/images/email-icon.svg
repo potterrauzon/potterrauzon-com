@@ -1,0 +1,7 @@
+<svg id="email-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <rect id="Placement_Area" data-name="Placement Area" width="18" height="18" fill="red" opacity="0"/>
+  <g id="Icon">
+    <rect id="Canvas" width="18" height="18" fill="#464646" opacity="0"/>
+    <path id="Path_749873" data-name="Path 749873" d="M17.5,2H.5a.5.5,0,0,0-.5.5v13a.5.5,0,0,0,.5.5h17a.5.5,0,0,0,.5-.5V2.5A.5.5,0,0,0,17.5,2ZM17,3v.753L9,9.87,1,3.753V3Zm0,2.011v7.95L11.8,8.986ZM6.2,8.986,1,12.962V5.012ZM1,15v-.78l6.021-4.6,1.372,1.05a1,1,0,0,0,1.215,0l1.372-1.05L17,14.22V15Z" fill="#464646"/>
+  </g>
+</svg>

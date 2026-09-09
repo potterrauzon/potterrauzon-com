@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <g id="close-gray" transform="translate(-209 -10)">
+    <rect id="Frame" width="10" height="10" transform="translate(209 10)" fill="#f0f" opacity="0"/>
+    <path id="Shape" d="M9.317,8.433,5.884,5,9.317,1.567A.625.625,0,1,0,8.433.683L5,4.116,1.567.683a.625.625,0,1,0-.884.884C.83,1.713,2.769,3.657,4.116,5L.683,8.433a.625.625,0,0,0,.884.884L5,5.884,8.433,9.317a.625.625,0,1,0,.884-.884Z" transform="translate(209 10)" fill="#8e8e8e"/>
+  </g>
+</svg>

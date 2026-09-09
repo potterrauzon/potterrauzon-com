@@ -1,0 +1,7 @@
+<svg id="alert-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="Placement_Area" data-name="Placement Area" width="24" height="24" fill="red" opacity="0"/>
+  <g id="Icon">
+    <rect id="Canvas" width="24" height="24" fill="#464646" opacity="0"/>
+    <path id="Path_749891" data-name="Path 749891" d="M11.373,1.375.221,21.33a.667.667,0,0,0,.581.992h22.3a.667.667,0,0,0,.581-.992L12.537,1.375a.667.667,0,0,0-1.164,0Zm1.915,17.947a.333.333,0,0,1-.333.333h-2a.333.333,0,0,1-.333-.333v-2a.333.333,0,0,1,.333-.333h2a.333.333,0,0,1,.333.333Zm0-4a.333.333,0,0,1-.333.333h-2a.333.333,0,0,1-.333-.333v-8a.333.333,0,0,1,.333-.333h2a.333.333,0,0,1,.333.333Z" transform="translate(0.045 0.344)" fill="#f68523"/>
+  </g>
+</svg>

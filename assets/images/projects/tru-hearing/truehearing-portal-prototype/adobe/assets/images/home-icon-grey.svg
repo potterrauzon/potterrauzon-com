@@ -1,0 +1,7 @@
+<svg id="home-icon-grey" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <rect id="Placement_Area" data-name="Placement Area" width="22" height="22" fill="red" opacity="0"/>
+  <g id="Icon">
+    <rect id="Canvas" width="22" height="22" fill="#222" opacity="0"/>
+    <path id="Path_191098" data-name="Path 191098" d="M20.678,11.934,11.354,2.61a.5.5,0,0,0-.708,0L1.322,11.934a.5.5,0,0,0,0,.707l1.165,1.165a.5.5,0,0,0,.353.146H3.5V19a.5.5,0,0,0,.5.5H8a.5.5,0,0,0,.5-.5V13.5A.5.5,0,0,1,9,13h4a.5.5,0,0,1,.5.5V19a.5.5,0,0,0,.5.5h4a.5.5,0,0,0,.5-.5V13.952h.66a.5.5,0,0,0,.353-.146l1.165-1.165A.5.5,0,0,0,20.678,11.934Z" fill="#6d6d6d"/>
+  </g>
+</svg>

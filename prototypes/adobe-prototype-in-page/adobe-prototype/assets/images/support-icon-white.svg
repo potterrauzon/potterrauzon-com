@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="create-ticket-icon-white" transform="translate(-304 -168)">
+    <g id="Decorative_icon" data-name="Decorative icon" transform="translate(312.656 176.656)">
+      <rect id="Placement_Area" data-name="Placement Area" width="9" height="9" transform="translate(0.344 0.344)" fill="red" opacity="0"/>
+      <g id="Icon">
+        <rect id="Canvas" width="9" height="9" transform="translate(0.344 0.344)" fill="#464646" opacity="0"/>
+        <path id="Path_749857" data-name="Path 749857" d="M8.924,5.575H6.606V3.258A.258.258,0,0,0,6.348,3H5.833a.258.258,0,0,0-.258.258V5.575H3.258A.258.258,0,0,0,3,5.833v.515a.258.258,0,0,0,.258.258H5.575V8.924a.258.258,0,0,0,.258.258h.515a.258.258,0,0,0,.258-.258V6.606H8.924a.258.258,0,0,0,.258-.258V5.833A.258.258,0,0,0,8.924,5.575Z" transform="translate(-1.455 -1.455)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="tickets" transform="translate(304 168)">
+      <g id="Group_446192" data-name="Group 446192">
+        <path id="Path_749854" data-name="Path 749854" d="M13.844,4.153a1.972,1.972,0,1,1-2.789-2.789L9.692,0,0,9.692l1.364,1.364a1.972,1.972,0,1,1,2.789,2.789l1.364,1.364,9.692-9.692Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

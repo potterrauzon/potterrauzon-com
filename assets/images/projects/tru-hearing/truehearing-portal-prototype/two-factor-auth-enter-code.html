@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Two Factor Auth - Enter Code</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/portal.css">
+    <link rel="stylesheet" type="text/css" href="css/main-nav.css">
+</head>
+<body>
+   <div class="main-container">
+        
+        <div class="universal-nav">
+            <div class="universal-nav-inner">
+                <div class="nav-language">
+                    <div class="language-text body-m">English</div>
+                    <div class="language-toggle">
+                        <div class="language-toggle-bg"></div>
+                        <div class="language-toggle-button"></div>
+                    </div>
+                    <div class="language-text body-m">Espanol</div>
+                </div>
+                <div id="sign-in-main-nav-content" class="nav-phone-content">
+                    <div id="" class="headline-s turaco-green-text padding-right-24">Need help?</div>
+                    <div id="" class="padding-right-8 "><img class="phone-icon-green flex" src="assets/images/phone-icon-green.svg"/></div>
+                    <div id="" class="headline-s accessible-green-text padding-right-20">1-800-334-1807</div>
+                    <div id="" class="body-l dark-gray-text">TTY: 711</div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="main-nav">
+            <div class="main-nav-left">
+                <img id="main-nav-logo" class="header-logo" src="assets/images/th-logo.svg"/>
+                <div class="main-nav-items">
+                    <div class="main-nav-item body-l " onclick="window.location='dashboard.html'">My dashboard</div>
+                    <div class="main-nav-item body-l " onclick="window.location='appointments-landing.html'">Appointments</div>
+                    <div class="main-nav-item body-l " onclick="window.location='orders.html'">Orders</div>
+                    <div class="main-nav-item body-l " onclick="window.location='faq.html'">FAQ</div>
+                </div>
+            </div>
+            <div class="main-nav-right">
+                <div class="main-nav-items">
+                    <div class="main-nav-item body-l active" onclick="window.location='account-info.html'">My account</div>
+                    <div class="main-nav-item body-l" onclick="window.location='sign-in-sign-up.html'">Sign out</div>
+                </div>
+            </div>
+            <div id="main-nav-mobile-button" class="main-hamburger-icon">
+                <div class="main-bar-1"></div>
+                <div class="main-bar-2"></div>
+                <div class="main-bar-3"></div>
+            </div>
+        </div>
+        <div id="main-nav-mobile">
+            <div class="main-nav-mobile-bg"></div>
+            <div class="main-nav-mobile-inner">
+                <div class="main-nav-mobile-content">
+                    <div id="main-nav-mobile-item-1" class="main-nav-mobile-phone">
+                        <div class="headline-s turaco-green-text padding-right-24">Need help?</div>
+                        <div class="mobile-menu-phone">
+                            <div id="" class="padding-right-8 "><img class="phone-icon-green flex" src="assets/images/phone-icon-green.svg"/></div>
+                            <div id="" class="headline-s accessible-green-text padding-right-20">1-800-334-1807</div>
+                            <div id="" class="body-l dark-gray-text">TTY: 711</div>
+                        </div>
+                    </div>
+                    <div id="main-nav-mobile-item-2" class="main-nav-mobile-item" onclick="window.location='dashboard.html'">
+                        <div class="main-nav-mobile-item-text body-l tru-gray-text">My Dashboard</div>
+                        <div class="main-nav-mobile-item-arrow"><img src="assets/images/mobile-nav-arrow-green.svg"/></div>
+                    </div>
+                    <div id="main-nav-mobile-item-3" class="main-nav-mobile-item " onclick="window.location='appointments-landing.html'">
+                        <div class="main-nav-mobile-item-text body-l tru-gray-text">Appointments</div>
+                        <div class="main-nav-mobile-item-arrow"><img src="assets/images/mobile-nav-arrow-green.svg"/></div>
+                    </div>
+                    <div id="main-nav-mobile-item-4" class="main-nav-mobile-item" onclick="window.location='orders.html'">
+                        <div class="main-nav-mobile-item-text body-l tru-gray-text">Orders</div>
+                        <div class="main-nav-mobile-item-arrow"><img src="assets/images/mobile-nav-arrow-green.svg"/></div>
+                    </div>
+                    <div id="main-nav-mobile-item-5" class="main-nav-mobile-item" onclick="window.location='faq.html'">
+                        <div class="main-nav-mobile-item-text body-l tru-gray-text">FAQ</div>
+                        <div class="main-nav-mobile-item-arrow"><img src="assets/images/mobile-nav-arrow-green.svg"/></div>
+                    </div>
+                    <div id="main-nav-mobile-item-6" class="main-nav-mobile-utility">
+                        <div class="main-nav-mobile-utility-item body-m active" onclick="window.location='account-info.html'">My account</div>
+                        <div class="main-nav-mobile-utility-item body-m" onclick="window.location='sign-in-sign-up.html'">Sign out</div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+
+        </div>
+
+        <div class="main-page-container">
+            <div class="small-header">
+                <div class="small-header-breadcrumbs">
+                    <!-- <div class="small-header-breadcrumb-text"><img src="assets/images/left-arrow-small.svg"/>Back to appointments</div> -->
+                </div>
+                <div class="small-header-content">
+                    <div class="headline-xl white-text">Authenticate your account</div>
+                </div>
+            </div>
+
+            <div class="main-page-content">
+                <div class="two-factor-auth-container">
+                    <div class="two-factor-auth-content">
+                        <img class="margin-bottom-24" src="assets/images/circle-icon-shield-blue.svg"/>
+                        <div class="headline-m turaco-green-text margin-bottom-16">Enter your authentication code below.</div>
+                        <div class="body-m  tru-gray-text margin-bottom-32">We sent a 7-character code to your email or phone. Type it in here to sign into your account.</div>
+                        <form>
+                            <fieldset>
+                                <legend>Contact information, Phone number, Email address.</legend>
+                                <div class="enter-code-fields">
+                                    <input class="headline-m turaco-green-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="#">
+                                    <input class="headline-m turaco-green-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="#">
+                                    <input class="headline-m turaco-green-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="#">
+                                    <input class="headline-m turaco-green-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="#">
+                                    <input class="headline-m turaco-green-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="#">
+                                    <input class="headline-m turaco-green-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="#">
+                                    <input class="headline-m turaco-green-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="#">
+                                </div>
+                                <div class="flex-center">
+                                <label class="form-check-box-container"> Remember this device for 30 days
+                                    <input type="checkbox" id="remember-me" name="remember-me" value="remember-me">
+                                    <span class="form-check-box"></span>
+                                </label>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <a href="two-factor-auth-verified.html"><div class="primary-button  margin-bottom-32">Submit code</div></a>
+                        <div class="body-s">If you have not been able to authenticate your account and believe your personal details are incorrect, please contact your insurance provider directly.</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-top-container">
+                <div class="footer-top-bird">
+                    <img src="assets/images/th-bird-footer.svg"/>
+                </div>
+                <div class="footer-top-content-container">
+                    <div class="footer-top-hear-you">
+                        <div class="footer-top-hear-you-text">We're <i>hear</i> for you.</div>
+                        <div class="footer-top-hear-you-squiggle"><img src="assets/images/squiggles.svg"/></div>
+                    </div>
+                    <div class="footer-top-content">
+                        <div class="footer-top-content-phone">
+                            <div class="footer-top-content-item"><img src="assets/images/phone-icon-green.svg"/>1-800-334-1807</div>
+                            <div class="footer-top-content-item"><img src="assets/images/mail-icon-green.svg"/>Help@TruHearing.com</div>
+                            <div class="footer-top-content-social">
+                                <img src="assets/images/facebook-logo.svg"/>
+                                <img src="assets/images/linkedin-logo.svg"/>
+                                <img src="assets/images/youtube-logo.svg"/>
+                            </div>
+                        </div>
+                        <div class="footer-top-content-address">
+                            <div class="footer-top-content-item">TruHearing, Inc.<br>12936 Frontrunner Blvd #100<br>Draper, UT 84020</div>
+                        </div>
+                        <div class="footer-top-content-links">
+                            <div class="headline-xs white-text">Helpful link</div>
+                            <div class="footer-top-content-item"><img src="assets/images/ext-link-icon.svg"/>Find a provider near me</div>
+                            <div class="footer-top-content-item"><img src="assets/images/ext-link-icon.svg"/>Browse our hearing aid selection</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-top-back-home">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-copyright">© 2024 TruHearing, Inc.</div>
+                <div class="footer-bottom-terms">
+                    <div class="footer-bottom-terms-item">Terms & Conditions</div>
+                    <div class="footer-bottom-terms-item">HIPAA Notice</div>
+                    <div class="footer-bottom-terms-item">Privacy Policy</div>
+                    <div class="footer-bottom-terms-item">California Privacy Policy</div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- END FOOTER -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    
+    <script type="text/javascript" src="js/global.js"></script> 
+    <script type="text/javascript" src="js/main-nav.js"></script> 
+    <noscript><style> body {display:block;}</style></noscript>
+
+</body>
+</html>

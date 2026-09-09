@@ -1,0 +1,607 @@
+
+
+/* DASHBOARD CONTENT STYLES */
+
+.dashboard-header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 100px 120px;
+	margin-bottom: 80px;
+	background-color: #00822F;
+	background-image: url("../assets/images/dashboard-hero-bg.svg");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 490px 400px;
+}
+
+/* SMALL HEADER STYLES */
+.small-header{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 16px 40px;
+	margin-bottom: 80px;
+	background-color: #00822F;
+	background-image: url("../assets/images/header-background-dots.png");
+	background-repeat:repeat;
+	background-size: 24px 74px;
+}
+
+.small-header-breadcrumbs{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	cursor: pointer;
+}
+
+.small-header-breadcrumbs-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.small-header-breadcrumb-text{
+	font-family: 'truhearing-black', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 900;
+	color: #FFFFFF;
+}
+
+.small-header-breadcrumbs img{
+	margin-right: 5px;
+	margin-bottom: 3px;
+}
+
+.small-header-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 80px 0;
+	text-align: center;
+}
+/* END SMALL HEADER STYLES */
+
+.dashboard-header-content{
+	max-width: 700px;
+	text-align: center;
+}
+
+.dashboard-header-content .headline-xl{
+	margin-bottom: 24px;
+}
+
+.main-page-content{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	gap: 16px;
+	padding: 0 20px;
+}
+
+.main-content-white-box-bg{
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.main-page-left{
+	max-width: 389px;
+}
+
+.main-page-right{
+	max-width: 795px;
+	gap: 16px;
+}
+
+.main-left-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 40px 32px;
+}
+
+/* MAIN LEFT STYLES */
+.main-left-content img{
+	width: 180px;
+	height: 36px;
+	margin: 24px 0;
+}
+
+.main-left-content-headline-container{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.small-tag-blue{
+	padding: 4px 10px;
+	color: #FFFFFF;
+	background-color: #006CA6;
+	border-radius: 4px;
+}
+
+.divider-line-horizontal-24{
+	display: flex;
+	border-top: 1px solid rgba(0, 0, 0, 0.10);
+	margin-bottom: 24px;
+}
+
+.purchase-bullets{
+	padding-left: 24px;
+	margin-top: 8px;
+}
+
+.purchase-bullets li{
+	padding-bottom: 4px;
+}
+
+/* MAIN RIGHT STYLES */
+.main-right-content{
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.find-hearing-aids{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 40px 32px;
+}
+
+.appointments-orders{
+	display: flex;
+	gap: 16px;
+}
+
+.appointments-orders-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 32px;
+	width: 100%;
+}
+
+.appointments-orders-box img{
+	width: 64px;
+	height: 64px;
+}
+
+.big-bullet{
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.yellow-dot-bullet{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFDC23;
+	width: 40px;
+	height:40px;
+	min-width: 40px;
+	border-radius: 20px;
+	margin-right: 16px;
+	padding-top: 6px;
+}
+
+.green-dot-bullet{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #00A73C;
+	width: 40px;
+	height:40px;
+	min-width: 40px;
+	border-radius: 20px;
+	margin-right: 16px;
+}
+
+.green-dot-bullet img{
+	width: 17px;
+	height:13px;
+}
+
+.dashboard-video{
+	object-fit: cover;
+	width: 100%;
+	max-width: 795px;
+}
+
+.appointments-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.appointments-upcoming{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.horizontal-scroll-box-outer-container{
+	position: relative;
+}
+
+.horizontal-scroll-box{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.horizontal-scroll-box-inner{
+	position: relative;
+	display: flex;
+	min-width: 1000px;
+}
+
+.scroll-box-mobile-fade-container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.scroll-box-mobile-fade{
+	display: none;
+	height:100%;
+	width:84px;
+	background: linear-gradient(90deg, rgba(245, 251, 247, 0.00) 0%, #F5FBF7 70.14%);
+	z-index: 100;
+}
+
+.swipe-for-more-container{
+	width:100%;
+	display: none;
+	justify-content: flex-end;
+	margin-bottom: 4px;
+}
+
+.swipe-for-more{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'truhearing-black', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 900;
+	color: #00822F;
+}
+
+.swipe-for-more img{
+	margin-left:  8px;
+}
+
+.grid-container-upcoming{
+	max-width: 1000px;
+	display: grid;
+	white-space:normal;
+	grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1.5fr);
+}
+
+.grid-container-past{
+	display: grid;
+	grid-template-columns: repeat(4, minmax(50px, 1fr));
+}
+
+.grid-row{
+	display: contents;
+}
+
+.grid-row:nth-of-type(2n+3) > .grid-cell {
+	background-color: #F0F0F0;
+}
+  
+.grid-row-no-stripe{
+	display: contents;
+}  
+
+.grid-cell{
+	font-family: 'truhearing-regular', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	padding: 16px;
+}
+
+.grid-header > .grid-cell{
+	font-family: 'truhearing-black', sans-serif;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 900;
+	color: #104923;
+	background-color: none;
+	border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.appointments-past{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.appointments-schedule{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 40px 100px;
+	max-width: 1000px;
+}
+
+.schedule-button-container{
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+	flex-wrap: wrap;
+	padding-bottom: 24px;
+}
+
+.orders-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.orders-content{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.grid-container-orders{
+	padding:0;
+	margin:0;
+	width: 1000px;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1.5fr) minmax(150px, 1fr);
+}
+
+.text-align-right{
+	text-align: right;
+}
+
+.faq-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.faq-content{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.faq-item{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	border: 2px solid rgba(0, 0, 0, 0.08);
+	padding:32px;
+	margin-bottom: 16px;
+}
+
+.faq-item > .faq-body{
+	display: none;
+}
+
+.faq-headline-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.faq-down-arrow{
+	width: 16px;
+	height:8px;
+}
+
+.account-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.account-content{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	width: 100%;
+	max-width: 600px;
+}
+
+.account-tab-container{
+	display: flex;
+	gap: 74px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.account-tab-item{
+	display: flex;
+	padding: 16px 0;
+	font-family: 'truhearing-black', sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 900;
+	color: rgba(45, 45, 45, .7);
+	
+}
+
+.account-tab-container > .active{
+	
+	color: #104923;
+	border-bottom: 4px solid #00A73C;
+
+}
+
+.form-divider-line-horizontal{
+	border-top: 1px solid rgba(0, 0, 0, 0.10);
+	margin-top: 16px;
+	margin-bottom: 32px;
+	
+}
+
+.two-factor-auth-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.two-factor-auth-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 80px;
+	width: 100%;
+	max-width: 960px;
+}
+
+.two-factor-auth-content img{
+	width: 64px;
+	height:64px;
+}
+
+.two-factor-auth-content .body-s{
+	max-width: 760px;
+}
+
+.enter-code-fields{
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.enter-code-fields input{
+	text-align: center;
+	max-width: 72px;
+}
+
+.order-receipt-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.order-receipt-content{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 48px;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.order-header-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+	gap: 32px;
+}
+
+.order-header-container > div{
+	max-width: 290px;
+}
+
+.grid-container-order-receipt{
+	padding:0;
+	margin:0;
+	width: 1000px;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: minmax(150px, 3fr) minmax(150px, 1.5fr) minmax(150px, 1fr) minmax(150px, 1fr);
+}
+
+.grid-row-top-line > .grid-cell{
+	border-top: 2px solid #104923;
+}
+
+
+@media only screen and (max-width:1200px){
+	
+	.main-page-content{
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.main-page-left{
+		width: auto;
+		max-width: 795px;
+	}
+}
+
+@media only screen and (max-width:1040px){
+	
+	.swipe-for-more-container{
+		display: flex;
+	}
+
+	.scroll-box-mobile-fade{
+		display: flex;
+	}
+}
+
+@media only screen and (max-width:880px){
+
+	.order-header-container > div{
+		text-align: left;
+	}
+	
+}
+
+@media only screen and (max-width:800px){
+	
+	.appointments-orders{
+		flex-direction: column;
+	}
+	.main-page-content{
+		margin:0 40px;
+	}
+
+}
+
+	

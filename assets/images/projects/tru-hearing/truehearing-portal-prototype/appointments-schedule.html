@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Schedule your appointment</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/portal.css">
+    <link rel="stylesheet" type="text/css" href="css/main-nav.css">
+    <link rel="stylesheet" type="text/css" href="css/appointments/appointments.css">
+</head>
+<body>
+   <div class="main-container">
+
+        <div class="universal-nav">
+            <div class="universal-nav-inner">
+                <div class="nav-language">
+                    <div class="language-text body-m">English</div>
+                    <div class="language-toggle">
+                        <div class="language-toggle-bg"></div>
+                        <div class="language-toggle-button"></div>
+                    </div>
+                    <div class="language-text body-m">Espanol</div>
+                </div>
+                <div id="sign-in-main-nav-content" class="nav-phone-content">
+                    <div id="" class="headline-s turaco-green-text padding-right-24">Need help?</div>
+                    <div id="" class="padding-right-8 "><img class="phone-icon-green flex" src="assets/images/phone-icon-green.svg"/></div>
+                    <div id="" class="headline-s accessible-green-text padding-right-20">1-800-334-1807</div>
+                    <div id="" class="body-l dark-gray-text">TTY: 711</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-nav">
+            <div class="main-nav-left">
+                <img id="main-nav-logo" class="header-logo" src="assets/images/th-logo.svg"/>
+                <div class="main-nav-items">
+                    <div class="main-nav-item body-l " onclick="window.location='dashboard.html'">My dashboard</div>
+                    <div class="main-nav-item body-l active" onclick="window.location='appointments-landing.html'">Appointments</div>
+                    <div class="main-nav-item body-l " onclick="window.location='orders.html'">Orders</div>
+                    <div class="main-nav-item body-l " onclick="window.location='faq.html'">FAQ</div>
+                </div>
+            </div>
+            <div class="main-nav-right">
+                <div class="main-nav-items">
+                    <div class="main-nav-item body-l" onclick="window.location='account-info.html'">My account</div>
+                    <div class="main-nav-item body-l" onclick="window.location='sign-in-sign-up.html'">Sign out</div>
+                </div>
+            </div>
+            <div id="main-nav-mobile-button" class="main-hamburger-icon">
+                <div class="main-bar-1"></div>
+                <div class="main-bar-2"></div>
+                <div class="main-bar-3"></div>
+            </div>
+        </div>
+        
+        <div id="main-nav-mobile">
+            <div class="main-nav-mobile-bg"></div>
+            <div class="main-nav-mobile-inner">
+                <div class="main-nav-mobile-content">
+                    <div id="main-nav-mobile-item-1" class="main-nav-mobile-phone">
+                        <div class="headline-s turaco-green-text padding-right-24">Need help?</div>
+                        <div class="mobile-menu-phone">
+                            <div id="" class="padding-right-8 "><img class="phone-icon-green flex" src="assets/images/phone-icon-green.svg"/></div>
+                            <div id="" class="headline-s accessible-green-text padding-right-20">1-800-334-1807</div>
+                            <div id="" class="body-l dark-gray-text">TTY: 711</div>
+                        </div>
+                    </div>
+                    <div id="main-nav-mobile-item-2" class="main-nav-mobile-item" onclick="window.location='dashboard.html'">
+                        <div class="main-nav-mobile-item-text body-l tru-gray-text">My Dashboard</div>
+                        <div class="main-nav-mobile-item-arrow"><img src="assets/images/mobile-nav-arrow-green.svg"/></div>
+                    </div>
+                    <div id="main-nav-mobile-item-3" class="main-nav-mobile-item active" onclick="window.location='appointments-landing.html'">
+                        <div class="main-nav-mobile-item-text body-l tru-gray-text">Appointments</div>
+                        <div class="main-nav-mobile-item-arrow"><img src="assets/images/mobile-nav-arrow-green.svg"/></div>
+                    </div>
+                    <div id="main-nav-mobile-item-4" class="main-nav-mobile-item" onclick="window.location='orders.html'">
+                        <div class="main-nav-mobile-item-text body-l tru-gray-text">Orders</div>
+                        <div class="main-nav-mobile-item-arrow"><img src="assets/images/mobile-nav-arrow-green.svg"/></div>
+                    </div>
+                    <div id="main-nav-mobile-item-5" class="main-nav-mobile-item" onclick="window.location='faq.html'">
+                        <div class="main-nav-mobile-item-text body-l tru-gray-text">FAQ</div>
+                        <div class="main-nav-mobile-item-arrow"><img src="assets/images/mobile-nav-arrow-green.svg"/></div>
+                    </div>
+                    <div id="main-nav-mobile-item-6" class="main-nav-mobile-utility">
+                        <div class="main-nav-mobile-utility-item body-m" onclick="window.location='account-info.html'">My account</div>
+                        <div class="main-nav-mobile-utility-item body-m" onclick="window.location='sign-in-sign-up.html'">Sign out</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-page-container">
+            <div class="small-header">
+                <div class="small-header-breadcrumbs">
+                    <div class="small-header-breadcrumbs-content">
+                        <img src="assets/images/left-arrow-small.svg"/>
+                        <a href="appointments-landing.html"><div class="small-header-breadcrumb-text">Back to appointments</div></a>
+                    </div>
+                </div>
+                <div class="small-header-content">
+                    <div class="headline-xl white-text">Schedule your appointment</div>
+                </div>
+            </div>
+
+            <div class="main-page-content">
+                <div class="appointments-container">
+                    <!-- SIGN UP STEPS -->
+                    <div id="steps" class="form-steps-container">
+                        <div id="" class="form-steps">
+                            <div class="steps-title turaco-green-text headline-m">Confirm your contact information</div>
+                            <div class="step-bar-container">
+                                <div id="step-dot-one" class="step-dot">
+                                    <div class="step-dot-bg"></div>
+                                    <div class="step-dot-center-blue"></div>
+                                    <div class="step-dot-active"></div>
+                                    <div class="step-dot-center-white"></div>
+                                </div>
+                                <div id="step-line-one" class="step-center-line">
+                                    <div class="step-center-line-dotted"></div>
+                                    <div class="step-center-line-solid"></div>
+                                </div>
+                                <div id="step-dot-two" class="step-dot">
+                                    <div class="step-dot-bg"></div>
+                                    <div class="step-dot-center-blue"></div>
+                                    <div class="step-dot-active"></div>
+                                    <div class="step-dot-center-white"></div>
+                                </div>
+                                <div id="step-line-two" class="step-center-line">
+                                    <div class="step-center-line-dotted"></div>
+                                    <div class="step-center-line-solid"></div>
+                                </div>
+                                <div id="step-dot-three" class="step-dot">
+                                    <div class="step-dot-bg"></div>
+                                    <div class="step-dot-center-blue"></div>
+                                    <div class="step-dot-active"></div>
+                                    <div class="step-dot-center-white"></div>
+                                </div>
+                                <div id="step-line-three" class="step-center-line">
+                                    <div class="step-center-line-dotted"></div>
+                                    <div class="step-center-line-solid"></div>
+                                </div>
+                                <div id="step-dot-four" class="step-dot">
+                                    <div class="step-dot-bg"></div>
+                                    <div class="step-dot-center-blue"></div>
+                                    <div class="step-dot-active"></div>
+                                    <div class="step-dot-center-white"></div>
+                                </div>
+                            </div>
+                            <div class="steps-counter turaco-green-text">Step 1 of 4</div>
+                        </div>
+                    </div>
+                    <!-- END SIGN UP STEPS -->
+
+                    <!-- SCHEDULE MAIN PAGE -->
+                    <div id="schedule-main">
+                        <div class="schedule-contact-container">
+                            <div class="schedule-contact-item">
+                                <div class="schedule-contact-item-top">
+                                    <div class="headline-m turaco-green-text">Give us a call.</div>
+                                    <div class="body-l tru-gray-text">A Hearing Consultant will hand pick a provider for you. <br><span class="headline-s turaco-green-text">Monday - Friday</span><br> 8am-8pm</div>
+                                </div>
+                                <div class="schedule-contact-item-bottom">
+                                    <div class="secondary-button">1-800-334-1807</div>
+                                </div>
+                            </div>
+                            <div class="schedule-contact-item">
+                                <div class="schedule-contact-item-top">
+                                    <div class="headline-m turaco-green-text">Submit a form.</div>
+                                    <div class="body-l tru-gray-text">Fill out a quick form and we'll get back to you in 1-3 business days.</div>
+                                </div>
+                                <div class="schedule-contact-item-bottom">
+                                    <div id="schedule-submit-form-button" class="secondary-button">Get started</div>
+                                </div>
+                            </div>
+                            <div class="schedule-contact-item">
+                                <div class="schedule-contact-item-top">
+                                    <div class="headline-m turaco-green-text">Chat with us online.</div>
+                                    <div class="body-l tru-gray-text">A Hearing Consultant will help you set up your appointment. <br><span class="headline-s turaco-green-text">Monday - Friday</span><br> 8am-8pm</div>
+                                </div>
+                                <div class="schedule-contact-item-bottom">
+                                    <div class="secondary-button">Start chat</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="schedule-disclaimer body-m tru-gray-text">Phone and chat features are not available after hours, but you can always leave us a message or submit a form to request a call back.</div>
+                    </div>
+
+                    <!-- STEP ONE -->
+                    <div id="schedule-step-one" class="steps-content-container step">
+                        <div class="steps-content body-l tru-gray-text">
+                            <div class="steps-instructions">[First Name], please confirm your phone number and email address below in case we need to get in touch.</div>
+                            <form>
+                                <fieldset>
+                                    <legend>Contact information, Phone number, Email address.</legend>
+                                    <label class="eyebrow turaco-green-text" for="phone">Phone number</label>
+                                    <input class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="1-XXX-XXX-XXXX">
+                                    <label class="eyebrow turaco-green-text" for="email">Email</label>
+                                    <input class="body-m tru-gray-text margin-bottom-24" type="email" id="email" name="email" placeholder="example@email.com">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- STEP TWO -->
+                    <div id="schedule-step-two" class="steps-content-container step">
+                        <div class="steps-content body-l tru-gray-text">
+                            <div class="steps-instructions-left">Fill in your address to help us find providers near you.</div>
+                            <form>
+                                <fieldset>
+                                    <legend>Customer information, first name, last name, date of birth, zipcode.</legend>
+                                    <div class="form-group">
+                                        <label class="eyebrow turaco-green-text" for="zip">Street Address</label>
+                                        <input class="body-m tru-gray-text margin-bottom-24" type="text" id="zip" name="zip" placeholder="">
+                                    </div>
+                                    <div class="form-name-group">
+                                        <div class="form-group margin-right-8">
+                                            <label class="eyebrow turaco-green-text" for="f-name">City</label>
+                                            <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label  class="eyebrow turaco-green-text" for="f-name">State</label>
+                                            <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-name-group">
+                                        <div class="form-group margin-right-8">
+                                            <label class="eyebrow turaco-green-text" for="f-name">Zip Code</label>
+                                            <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label  class="eyebrow turaco-green-text" for="f-name">Country</label>
+                                            <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="text-align-left body-l tru-gray-text margin-top-32 margin-bottom-8">Locate providers within:</div>
+                                    <div class="form-group-inline">
+                                        <div class="radio">
+                                            <input id="radio-1" name="radio" type="radio" checked>
+                                            <label for="radio-1" class="radio-label">5 miles</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="radio-2" name="radio" type="radio">
+                                            <label  for="radio-2" class="radio-label">10 miles</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="radio-3" name="radio" type="radio">
+                                            <label  for="radio-3" class="radio-label">25 miles</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input id="radio-4" name="radio" type="radio">
+                                            <label  for="radio-4" class="radio-label">50 miles</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- STEP THREE -->
+                    <div id="schedule-step-three" class="steps-content-container step">
+                        <div class="steps-content body-l tru-gray-text">
+                            <div class="steps-instructions-left-column margin-bottom-32">
+                                <div class="headline-m turaco-green-text margin-top-24 margin-bottom-8">What works for your schedule?</div>
+                                <div class="body-l tru-gray-text">We'll work with potential providers to set up your appointment.</div>
+                            </div>
+                            <form>
+                                <fieldset>
+                                    <legend>Customer information, first name, last name, date of birth, zipcode.</legend>
+                                    <div class="form-group-inline margin-bottom-32">
+                                        <div class="radio">
+                                            <input id="radio-5" name="radio" type="radio">
+                                            <label  for="radio-5" class="radio-label">Call me anytime</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-name-group">
+                                        <div class="form-group margin-right-8">
+                                            <label class="eyebrow turaco-green-text" for="request-date">Request a date</label>
+                                            <select id="request-date" name="request-date" class="body-m tru-gray-text margin-bottom-24">
+                                                <option value="10-01-2024">October 01, 2024</option>
+                                                <option value="10-02-2024">October 02, 2024</option>
+                                                <option value="10-03-2024">October 03, 2024</option>
+                                                <option value="10-04-2024">October 04, 2024</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group margin-right-8">
+                                            <label class="eyebrow turaco-green-text" for="request-time">Request a time of day</label>
+                                            <select id="request-time" name="request-time" class="body-m tru-gray-text margin-bottom-24">
+                                                <option value="10-01-2024">Morning</option>
+                                                <option value="10-02-2024">Mid day</option>
+                                                <option value="10-03-2024">Afternoon</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- STEP FOUR -->
+                    <div id="schedule-step-four" class="steps-content-container step">
+                        <div class="steps-content body-l tru-gray-text">
+                            <div class="steps-instructions-left-column margin-bottom-32">
+                                <div class="headline-m turaco-green-text margin-top-24 margin-bottom-8">Share any questions or concerns.</div>
+                                <div class="body-l tru-gray-text">Your Hearing Consultant will help you find answers and take concerns into consideration when booking your appointment.</div>
+                            </div>
+                            <form>
+                                <fieldset">
+                                    <legend>Customer information, first name, last name, date of birth, zipcode.</legend>
+                                    <div class="form-group">
+                                        <label class="eyebrow turaco-green-text" for="zip">Comments<div class="inline-label-helper-text turaco-green-text">(Optional)</div></label>
+                                        <textarea class="body-m tru-gray-text" type="text" rows="4" id="comments" name="comments" placeholder=""></textarea>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                    </div>
+                    
+                    <!-- SCHEDULE CONFIRM -->
+                    <div id="schedule-confirm" class="steps-content-container step">
+                        <div class="steps-content body-l tru-gray-text">
+                            <div class="schedule-confirm-content">
+                                <div class="flex-center">
+                                    <div id="appointment-confirm-checkmark" class="checkmark-container margin-bottom-16">
+                                        <div id="appointment-confirm-checkmark-bg" class="checkmark-green">
+                                            <img id="appointment-confirm-checkmark-icon" class="checkmark-icon" src="assets/images/checkmark-icon-white.svg"/>
+                                            <div id="appointment-confirm-checkmark-mask" class="checkmark-icon-mask-green"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="headline-xl turaco-green-text margin-bottom-16">We received your appointment request!</div>
+                                <div class="body-l tru-gray-text margin-bottom-32">A Hearing Consultant will reach out to providers in your area that most closely match your needs and availability. You will receive a follow-up call to confirm your appointment.</div>
+                                <a href="dashboard.html"><button class="primary-button">Back to dashboard</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- STEPS BUTTONS : FORWARD AND BACK -->
+                    <div id="schedule-steps-buttons" class="steps-button-container">
+                        <div class="steps-button-inner-container">
+                            <div class="steps-buttons">
+                                <div id="back-button" class="secondary-button navigation" target-page="back-button">Back</div>
+                                <div id="next-button" class="primary-button navigation" target-page="next-button">Next</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END STEPS BUTTONS : FORWARD AND BACK -->
+
+                </div>
+            </div>
+        </div>
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-top-container">
+                <div class="footer-top-bird">
+                    <img src="assets/images/th-bird-footer.svg"/>
+                </div>
+                <div class="footer-top-content-container">
+                    <div class="footer-top-hear-you">
+                        <div class="footer-top-hear-you-text">We're <i>hear</i> for you.</div>
+                        <div class="footer-top-hear-you-squiggle"><img src="assets/images/squiggles.svg"/></div>
+                    </div>
+                    <div class="footer-top-content">
+                        <div class="footer-top-content-phone">
+                            <div class="footer-top-content-item"><img src="assets/images/phone-icon-green.svg"/>1-800-334-1807</div>
+                            <div class="footer-top-content-item"><img src="assets/images/mail-icon-green.svg"/>Help@TruHearing.com</div>
+                            <div class="footer-top-content-social">
+                                <img src="assets/images/facebook-logo.svg"/>
+                                <img src="assets/images/linkedin-logo.svg"/>
+                                <img src="assets/images/youtube-logo.svg"/>
+                            </div>
+                            
+                        </div>
+                        <div class="footer-top-content-address">
+                            <div class="footer-top-content-item">TruHearing, Inc.<br>12936 Frontrunner Blvd #100<br>Draper, UT 84020</div>
+                        </div>
+                        <div class="footer-top-content-links">
+                            <div class="headline-xs white-text">Helpful link</div>
+                            <div class="footer-top-content-item"><img src="assets/images/ext-link-icon.svg"/>Find a provider near me</div>
+                            <div class="footer-top-content-item"><img src="assets/images/ext-link-icon.svg"/>Browse our hearing aid selection</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-top-back-home">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-copyright">© 2024 TruHearing, Inc.</div>
+                <div class="footer-bottom-terms">
+                    <div class="footer-bottom-terms-item">Terms & Conditions</div>
+                    <div class="footer-bottom-terms-item">HIPAA Notice</div>
+                    <div class="footer-bottom-terms-item">Privacy Policy</div>
+                    <div class="footer-bottom-terms-item">California Privacy Policy</div>
+                </div>
+            </div>
+        </div>
+        <!-- END FOOTER -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    
+    <script type="text/javascript" src="js/global.js"></script> 
+    <script type="text/javascript" src="js/appointments/appointments.js"></script>
+    <script type="text/javascript" src="js/main-nav.js"></script>
+    <noscript><style> body {display:block;}</style></noscript>
+</body>
+</html>

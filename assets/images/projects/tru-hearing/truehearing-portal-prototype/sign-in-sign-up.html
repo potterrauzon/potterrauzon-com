@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    
+</head>
+<body>
+   <div class="main-container">
+        <div id="sign-in-main-nav" class="sign-in-header white">
+            <div id="" class="sign-in-header-inner">
+                <img id="sign-in-nav-logo" class="sign-in-header-logo" onclick="window.location='dashboard.html'" src="assets/images/th-logo.svg"/>
+                <div id="sign-in-main-nav-content" class="sign-in-header-phone">
+                    <div id="" class="headline-s turaco-green-text padding-right-24">Need help?</div>
+                    <div id="" class="padding-right-8 "><img class="phone-icon-green flex" src="assets/images/phone-icon-green.svg"/></div>
+                    <div id="" class="headline-s accessible-green-text padding-right-20">1-800-334-1807</div>
+                    <div id="" class="body-l dark-gray-text">TTY: 711</div>
+                </div>
+                <div id="sign-in-mobile-nav-button" class="hamburger-icon">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+                <div id="sign-in-mobile-nav" class="mobile-menu">
+                    <div class="mobile-menu-inner">
+                        <div id="mobile-nav-copy" class="headline-s turaco-green-text padding-right-24">Need help?</div>
+                        <div id="mobile-nav-copy-phone" class="mobile-menu-phone">
+                            <div id="" class="padding-right-8 "><img class="phone-icon-green flex" src="assets/images/phone-icon-green.svg"/></div>
+                            <div id="" class="headline-s accessible-green-text padding-right-20">1-800-334-1807</div>
+                            <div id="" class="body-l dark-gray-text">TTY: 711</div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <div id="green-bg" class="sign-in-green-container">
+        
+            <!-- SIGN IN OVERLAY -->
+            <div id="overlay" class="sign-in-overlay">
+                
+                <!-- SIGN IN SIGN UP : STEP 1-->
+                <div id="step-one" class="sign-in-sign-up-container step">
+                    <div class="sign-in-sign-up">
+                        <div id="" class="sign-in-content">
+                            <div id="" class="headline-m turaco-green-text padding-bottom-8">Sign in</div>
+                            <div id="" class="body-l padding-bottom-32">Already have an account with us? Sign in with your email and password here.</div>
+                            <form>
+                                <div class="sign-in-sign-up-form">
+                                    <fieldset>
+                                        <legend>Customer information, first name, last name, email.</legend>
+                                        <label class="eyebrow" for="email">Email</label>
+                                        <input class="body-m tru-gray-text margin-bottom-24" type="email" id="email" name="email" placeholder="example@email.com">
+                                        <div class="forgot-password-container">
+                                            <label class="eyebrow" for="password">Password</label>
+                                            <span class="forgot-password-link" onclick="window.location='two-factor-auth-options.html'">Forgot password?</span>
+                                        </div>
+                                        <input class="body-m black-text margin-bottom-24 padding-both-8" type="password" id="password" name="password" placeholder="">
+                                    </fieldset>
+                                    <a href="dashboard.html"><div class="flex">
+                                        <div id="sign-in-button" class="primary-button-full margin-top-32 navigation" target-page="dashboard" type="submit">Sign in</div>
+                                    </div></a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="divider-line-verticle"></div>
+                        <div class="divider-line-horizontal"></div>
+                        <div id="" class="create-account-content">
+                            <div id="" class="headline-m turaco-green-text padding-bottom-8">Create your account</div>
+                            <div id="" class="body-l padding-bottom-32">Don't have an account with us yet? No problem. Fill out the information below to get started.</div>
+                                <form>
+                                    <div class="sign-in-sign-up-form">
+                                        <div class="flex">
+                                            <fieldset class="margin-bottom-48">
+                                                <legend>Customer information, first name, last name, date of birth, zipcode.</legend>
+                                                <div class="form-group-inline">
+                                                    <div class="form-group margin-right-8">
+                                                        <label class="eyebrow" for="f-name">First name</label>
+                                                        <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="eyebrow" for="f-name">Last name</label>
+                                                        <input class="body-m tru-gray-text margin-bottom-24" type="text" id="l-name" name="l-name" placeholder="">
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="eyebrow">Birthday</div>
+                                                <div class="form-group-inline">
+                                                    <div class="form-group">
+                                                        <label class="body-s" for="month">Month</label>
+                                                        <input class="body-m tru-gray-text margin-bottom-24" type="text" id="month" name="month" placeholder="MM">
+                                                    </div>
+                                                    <div class="date-divider">/</div>
+                                                    <div class="form-group">
+                                                        <label class="body-s" for="day">Day</label>
+                                                        <input class="body-m tru-gray-text margin-bottom-24" type="text" id="day" name="day" placeholder="DD">
+                                                    </div>
+                                                    <div class="date-divider">/</div>
+                                                    <div class="form-group ">
+                                                        <label class="body-s" for="f-name">Year</label>
+                                                        <input class="body-m tru-gray-text margin-bottom-24 date-year" type="text" id="year" name="year" placeholder="YYYY">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="eyebrow" for="zip">Zip code</label>
+                                                    <input class="body-m tru-gray-text margin-bottom-24" type="text" id="zip" name="zip" placeholder="">
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="flex">
+                                            <div id="sign-up-button" class="secondary-button-full navigation" target-page="step-two"  type="submit">Continue</div>
+                                        </div>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SIGN IN SIGN UP -->
+                
+                <!-- SIGN UP STEPS -->
+                <div id="steps" class="form-steps-container">
+                    <div id="" class="form-steps">
+                        <div class="steps-title turaco-green-text headline-m">Contact information</div>
+                        <div class="step-bar-container">
+                            <div id="step-dot-one" class="step-dot">
+                                <div class="step-dot-bg"></div>
+                                <div class="step-dot-center-blue"></div>
+                                <div class="step-dot-active"></div>
+                                <div class="step-dot-center-white"></div>
+                            </div>
+                            <div id="step-line-one" class="step-center-line">
+                                <div class="step-center-line-dotted"></div>
+                                <div class="step-center-line-solid"></div>
+                            </div>
+                            <div id="step-dot-two" class="step-dot">
+                                <div class="step-dot-bg"></div>
+                                <div class="step-dot-center-blue"></div>
+                                <div class="step-dot-active"></div>
+                                <div class="step-dot-center-white"></div>
+                            </div>
+                            <div id="step-line-two" class="step-center-line">
+                                <div class="step-center-line-dotted"></div>
+                                <div class="step-center-line-solid"></div>
+                            </div>
+                            <div id="step-dot-three" class="step-dot">
+                                <div class="step-dot-bg"></div>
+                                <div class="step-dot-center-blue"></div>
+                                <div class="step-dot-active"></div>
+                                <div class="step-dot-center-white"></div>
+                            </div>
+                            <div id="step-line-three" class="step-center-line">
+                                <div class="step-center-line-dotted"></div>
+                                <div class="step-center-line-solid"></div>
+                            </div>
+                            <div id="step-dot-four" class="step-dot">
+                                <div class="step-dot-bg"></div>
+                                <div class="step-dot-center-blue"></div>
+                                <div class="step-dot-active"></div>
+                                <div class="step-dot-center-white"></div>
+                            </div>
+                        </div>
+                        <div class="steps-counter turaco-green-text">Step 2 of 4</div>
+                    </div>
+                </div>
+                <!-- END SIGN UP STEPS -->
+                <div id="steps-content-outer-container">
+                    <!-- STEP 2 -->
+                    <div id="step-two" class="steps-content-container step">
+                        <div class="steps-content body-l tru-gray-text">
+                            <div class="steps-instructions">Fill in your phone number and email address to help us set up your account.</div>
+                            <form>
+                                <fieldset>
+                                    <legend>Contact information, Phone number, Email address.</legend>
+                                    <label class="eyebrow turaco-green-text" for="phone">Phone number</label>
+                                    <input class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="1-XXX-XXX-XXXX">
+                                    <label class="eyebrow turaco-green-text" for="email">Email</label>
+                                    <input class="body-m tru-gray-text margin-bottom-24" type="email" id="email" name="email" placeholder="example@email.com">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END STEP 2 -->
+
+                    <!-- STEP 3 -->
+                    <div id="step-three" class="steps-content-container step">
+                        <div class="steps-content body-l tru-gray-text">
+                            <div class="steps-instructions">Tell us your health insurance provider and member ID so we can verify your identity.</div>
+                            <form>
+                                <fieldset>
+                                    <legend>Contact information, Phone number, Email address.</legend>
+                                    <label class="eyebrow turaco-green-text" for="phone">Health Insurance Provider<img src="assets/images/info-icon.svg"></label>
+                                    <input class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="">
+                                    <label class="eyebrow turaco-green-text" for="email">Member ID<img src="assets/images/info-icon.svg"></label>
+                                    <input class="body-m tru-gray-text margin-bottom-24" type="email" id="email" name="email" placeholder="">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END STEP 3 -->
+
+                    <!-- STEP 4 -->
+                    <div id="step-four" class="steps-content-container step">
+                        <div class="steps-content body-l tru-gray-text">
+                            <div class="steps-instructions">Keep these on hand for next time you need to sign into your account.</div>
+                            <form>
+                                <fieldset>
+                                    <legend>Contact information, Phone number, Email address.</legend>
+                                    <label class="eyebrow turaco-green-text" for="phone">Username</label>
+                                    <input class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="">
+                                    <label class="eyebrow turaco-green-text" for="email">Password<img src="assets/images/info-icon.svg"></label>
+                                    <input class="body-m tru-gray-text margin-bottom-24" type="email" id="email" name="email" placeholder="">
+                                    <label class="eyebrow turaco-green-text" for="email">Confirm Password</label>
+                                    <input class="body-m tru-gray-text margin-bottom-24" type="email" id="email" name="email" placeholder="">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div> 
+                    <!-- END STEP 4 -->
+                </div>
+                <!-- STEPS BUTTONS : FORWARD AND BACK -->
+                <div id="steps-buttons" class="steps-button-container">
+                    <div class="steps-button-inner-container">
+                        <div class="steps-buttons">
+                            <div id="back-button" class="secondary-button navigation" target-page="back-button">Back</div>
+                            <div id="next-button" class="primary-button navigation" target-page="next-button">Next</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END STEPS BUTTONS : FORWARD AND BACK -->
+
+
+
+                <!-- NO VARIFY -->
+                <div id="no-varify" class="no-varify-container interruptor">
+                    <div class="no-varify">
+                        <div class="headline-l turaco-green-text margin-bottom-48">We couldn't verify your identity. Let us help you sort it out.</div>
+                        <div class="no-varify-call-container">
+                            <div class="give-a-call-container">
+                                <div class="give-a-call-icon"><img src="assets/images/phone-circle-icon-blue.png"/></div>
+                                <div class="give-a-call-content">
+                                    <div class="give-a-call-text-container">
+                                        <div class="headline-m turaco-green-text">Give us a call.</div>
+                                        <div class="flex">
+                                            <div class="give-a-call-phone accessible-green-text">1-800-334-1807</div>
+                                            <div class="give-a-call-tty tru-gray-text">TTY: 711</div>
+                                        </div>
+                                    </div>
+                                    <div class="give-a-call-hours tru-gray-text">Monday - Friday <br>8am-8pm</div>
+                                </div>
+                            </div>
+                            <div class="give-a-call-button"><img class="" src="assets/images/phone-cta-icon-green.svg"/>Call TruHearing</div>
+                        </div>
+                        <div class="headline-m turaco-green-text margin-bottom-8">Submit this form and we'll be in touch.</div>
+                        <div class="body-l tru-gray-text margin-bottom-40">Fill out your information below and we'll call you to register your account.</div>
+                        <form>
+                            <div class="sign-in-sign-up-form">
+                                <div id="" class="flex">
+                                    <fieldset class="margin-bottom-48">
+                                        <legend>Customer information, first name, last name, date of birth, zipcode.</legend>
+                                        <div class="form-name-group">
+                                            <div class="form-group margin-right-8">
+                                                <label class="eyebrow turaco-green-text" for="f-name">First name</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="eyebrow turaco-green-text" for="f-name">Last name</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="eyebrow turaco-green-text">Birthday</div>
+                                        <div class="form-group-inline">
+                                            <div class="form-group">
+                                                <label class="body-s" for="month">Month</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24" type="text" id="month" name="month" placeholder="MM">
+                                            </div>
+                                            <div class="date-divider">/</div>
+                                            <div class="form-group">
+                                                <label class="body-s" for="day">Day</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24" type="text" id="day" name="day" placeholder="DD">
+                                            </div>
+                                            <div class="date-divider">/</div>
+                                            <div class="form-group ">
+                                                <label class="body-s" for="f-name">Year</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24 date-year" type="text" id="year" name="year" placeholder="YYYY">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="phone">Phone number</label>
+                                            <input class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="1-XXX-XXX-XXX">
+                                            <label class="eyebrow turaco-green-text" for="email">Email</label>
+                                            <input class="body-m tru-gray-text margin-bottom-24" type="email" id="email" name="email" placeholder="example@email.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="zip">Zip code</label>
+                                            <input class="body-m tru-gray-text margin-bottom-24" type="text" id="zip" name="zip" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="phone">Health Insurance Provider<img src="assets/images/info-icon.svg"></label>
+                                            <input class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="phone">Member ID<img src="assets/images/info-icon.svg"></label>
+                                            <input class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="zip">Comments<div class="inline-label-helper-text turaco-green-text">(Optional)</div></label>
+                                            <textarea class="body-m tru-gray-text margin-bottom-24" type="text" rows="4" id="comments" name="comments" placeholder=""></textarea>
+                                        </div>
+                                            
+                                    </fieldset>
+                                </div>
+                                <div id="" class="form-submit-align-right">
+                                    <div id="no-varify-button" class="primary-button navigation" target-page="sso-varify" type="submit">Submit Form</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END NO VARIFY -->
+
+                <!-- NO VARIFY CONFIRM -->
+                <div id="no-varify-confirm" class="steps-content-container step">
+                    <div class="steps-content body-l tru-gray-text">
+                        <div class="confirm-content">
+                            <div class="flex-center">
+                                <div id="no-varify-confirm-checkmark" class="checkmark-container margin-bottom-16">
+                                    <div id="no-varify-confirm-checkmark-bg" class="checkmark-green">
+                                        <img id="no-varify-confirm-checkmark-icon" class="checkmark-icon" src="assets/images/checkmark-icon-white.svg"/>
+                                        <div id="no-varify-confirm-checkmark-mask" class="checkmark-icon-mask-green"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="headline-l turaco-green-text margin-bottom-16">We've received your information.</div>
+                            <div class="body-l tru-gray-text margin-bottom-32">A dedicated Hearing Consultant will reach out to you in the next 1-2 business days and help you through your journey to better hearing.</div>
+                            <button id="no-varify-confirm-button" class="primary-button">Explore TruHearing.com</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSO VARIFY -->
+                <div id="sso-varify" class="sso-varify-container interruptor">
+                    <div class="sso-varify">
+                        <div class="headline-l turaco-green-text margin-bottom-48">Your account is almost ready! We just need some more info.</div>
+                        
+                        <div class="headline-m turaco-green-text margin-bottom-8">Fill out this form to register your account.</div>
+                        <div class="sso-varify-alert">
+                            <div class="sso-varify-alert-icon"><img src="assets/images/alert-icon-orange.svg"/></div>
+                            <div class="sso-varify-alert-text">Contact your insurance provider to update name, birthday, and insurance info.</div>
+                        </div>
+                        <form>
+                            <div class="sign-in-sign-up-form">
+                                <div id="" class="flex">
+                                    <fieldset class="margin-bottom-48">
+                                        <legend>Customer information, first name, last name, date of birth, zipcode.</legend>
+                                        <div class="form-name-group">
+                                            <div class="form-group margin-right-8">
+                                                <label class="eyebrow turaco-green-text" for="f-name">First name</label>
+                                                <input disabled class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="John">
+                                            </div>
+                                            <div class="form-group">
+                                                <label  class="eyebrow turaco-green-text" for="f-name">Last name</label>
+                                                <input disabled class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="doe">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="eyebrow turaco-green-text">Birthday</div>
+                                        <div class="form-group-inline">
+                                            <div class="form-group">
+                                                <label class="body-s" for="month">Month</label>
+                                                <input disabled class="body-m tru-gray-text margin-bottom-24" type="text" id="month" name="month" placeholder="11">
+                                            </div>
+                                            <div class="date-divider">/</div>
+                                            <div class="form-group">
+                                                <label class="body-s" for="day">Day</label>
+                                                <input disabled class="body-m tru-gray-text margin-bottom-24" type="text" id="day" name="day" placeholder="05">
+                                            </div>
+                                            <div class="date-divider">/</div>
+                                            <div class="form-group ">
+                                                <label class="body-s" for="f-name">Year</label>
+                                                <input disabled class="body-m tru-gray-text margin-bottom-24 date-year" type="text" id="year" name="year" placeholder="1958">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="phone">Phone number</label>
+                                            <input class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="1-XXX-XXX-XXX">
+                                            <label class="eyebrow turaco-green-text" for="email">Email</label>
+                                            <input class="body-m tru-gray-text margin-bottom-24" type="email" id="email" name="email" placeholder="example@email.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="zip">Street Address</label>
+                                            <input class="body-m tru-gray-text margin-bottom-24" type="text" id="zip" name="zip" placeholder="">
+                                        </div>
+                                        <div class="form-name-group">
+                                            <div class="form-group margin-right-8">
+                                                <label class="eyebrow turaco-green-text" for="f-name">City</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label  class="eyebrow turaco-green-text" for="f-name">State</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-name-group">
+                                            <div class="form-group margin-right-8">
+                                                <label class="eyebrow turaco-green-text" for="f-name">Zip Code</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label  class="eyebrow turaco-green-text" for="f-name">Country</label>
+                                                <input class="body-m tru-gray-text margin-bottom-24" type="text" id="f-name" name="f-name" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="phone">Health Insurance Provider<img src="assets/images/info-icon.svg"></label>
+                                            <input disabled class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="Humana">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="eyebrow turaco-green-text" for="phone">Member ID<img src="assets/images/info-icon.svg"></label>
+                                            <input disabled class="body-m black-text margin-bottom-24 padding-both-8" type="text" id="phone" name="phone" placeholder="H242351232">
+                                        </div>
+                                        
+                                            
+                                    </fieldset>
+                                </div>
+                                <div id="" class="form-submit-align-right">
+                                    <div id="sso-varify-button" class="primary-button navigation" target-page="step-four" type="submit">Create account</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END SSO VARIFY -->
+
+            </div>
+            <!-- END SIGN IN OVERLAY -->
+
+            <!-- VARIFY SIGNUP : SPINNER -->
+            <div id="varify" class="verify-container interruptor">
+                <div class="verify-inner-container">
+                    <div class="verify-content">
+                        <div class="spinner-container">
+                            <div id="spinner"><img class="spinner" src="assets/images/spinner.png"/></div>
+                            <div id="checkmark">
+                                <img class="spinner" src="assets/images/checkmark-icon-green.svg"/>
+                                <div id="spinner-mask"></div>
+                            </div>
+                        </div>
+                        <div id="varify-headline" class="headline-m white-text">We're searching our records to verify your identity.</div>
+                        <div id="my-account" class="tertiary-button navigation margin-top-40" target-page="sso-varify" type="submit">Go to my account profile</div>
+                        <div id="finish-set-up" class="tertiary-button navigation margin-top-40" target-page="sso-varify" type="submit">Finish setting up my account</div>
+                    </div>
+                </div>
+            </div>
+            <!-- VARIFY SIGNUP : SPINNER -->
+        
+        </div><!-- END GREEN CONTAINER -->
+        
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="footer-top-container">
+                <div class="footer-top-bird">
+                    <img src="assets/images/th-bird-footer.svg"/>
+                </div>
+                <div class="footer-top-content-container">
+                    <div class="footer-top-hear-you">
+                        <div class="footer-top-hear-you-text">We're <i>hear</i> for you.</div>
+                        <div class="footer-top-hear-you-squiggle"><img src="assets/images/squiggles.svg"/></div>
+                    </div>
+                    <div class="footer-top-content">
+                        <div class="footer-top-content-phone">
+                            <div class="footer-top-content-item"><img src="assets/images/phone-icon-green.svg"/>1-800-334-1807</div>
+                            <div class="footer-top-content-item"><img src="assets/images/mail-icon-green.svg"/>Help@TruHearing.com</div>
+                            <div class="footer-top-content-social">
+                                <img src="assets/images/facebook-logo.svg"/>
+                                <img src="assets/images/linkedin-logo.svg"/>
+                                <img src="assets/images/youtube-logo.svg"/>
+                            </div>
+                            
+                        </div>
+                        <div class="footer-top-content-address">
+                            <div class="footer-top-content-item">TruHearing, Inc.<br>12936 Frontrunner Blvd #100<br>Draper, UT 84020</div>
+                        </div>
+                        <div class="footer-top-content-links">
+                            <div class="headline-xs white-text">Helpful link</div>
+                            <div class="footer-top-content-item"><img src="assets/images/ext-link-icon.svg"/>Find a provider near me</div>
+                            <div class="footer-top-content-item"><img src="assets/images/ext-link-icon.svg"/>Browse our hearing aid selection</div>
+                        </div>
+                    </div>
+
+                    <div class="footer-top-back-home">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-container">
+                <div class="footer-bottom-copyright">© 2024 TruHearing, Inc.</div>
+                <div class="footer-bottom-terms">
+                    <div class="footer-bottom-terms-item">Terms & Conditions</div>
+                    <div class="footer-bottom-terms-item">HIPAA Notice</div>
+                    <div class="footer-bottom-terms-item">Privacy Policy</div>
+                    <div class="footer-bottom-terms-item">California Privacy Policy</div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- END FOOTER -->
+
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    
+    <script type="text/javascript" src="js/global.js"></script> 
+    <script type="text/javascript" src="js/sign-up-flow.js"></script>
+    <noscript><style> body {display:block;}</style></noscript>    
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="outside-link-icon-gray" transform="translate(-0.375)">
+    <rect id="Canvas" width="22" height="22" transform="translate(0.375)" fill="#222" opacity="0"/>
+    <path id="Path_749895" data-name="Path 749895" d="M18,10.75V17H4V4h7a.5.5,0,0,0,.5-.5V3a.5.5,0,0,0-.5-.5H3a.5.5,0,0,0-.5.5V18a.5.5,0,0,0,.5.5H19a.5.5,0,0,0,.5-.5V10.75a.25.25,0,0,0-.25-.25h-1A.25.25,0,0,0,18,10.75Z" fill="#222"/>
+    <path id="Path_749896" data-name="Path 749896" d="M14.268,2.5a.267.267,0,0,0-.189.456l1.775,1.776L12.089,8.5a.5.5,0,0,0,0,.707l.707.707a.5.5,0,0,0,.708,0l3.765-3.765,1.775,1.775a.267.267,0,0,0,.456-.189V2.5Z" fill="#222"/>
+  </g>
+</svg>
