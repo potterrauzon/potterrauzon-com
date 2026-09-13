@@ -54,6 +54,12 @@ img{ display:block; max-width:100%; }
 .navigation-links a.is-active::after{ content:''; position:absolute; left:0; right:0; bottom:-22px; height:2px; background:var(--accent); transform:translateY(calc(var(--underline-shift, 0) * 1px)); }
 .menu-toggle{ display:none; }
 
+/* Writing section hidden from top nav + footer sitemap, site-wide, without
+   touching every page's markup. The writing.html/article.html pages and
+   their own internal links are untouched — only these entry points go. */
+.navigation-links a[href$="writing.html"],
+.footer-column a[href$="writing.html"]{ display:none; }
+
 /* ---------- buttons ---------- */
 .button-primary{ font-family:var(--sans); font-size:14px; font-weight:500; display:inline-flex; align-items:center; gap:9px; padding:11px 18px; border-radius:3px; border:1px solid var(--ink); background:var(--ink); color:var(--paper); cursor:pointer; transition:transform .18s, background .18s; }
 .button-primary:hover{ background:#000; transform:translateY(-1px); }
