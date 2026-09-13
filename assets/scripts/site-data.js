@@ -36,26 +36,14 @@ class DeterministicRandom {
  */
 class ProjectRepository {
   static projects = [
-    { id:'avaya', n:'01', title:'Avaya Cloud Portal', kind:'WEB APP', year:'2019', url:'projects/avaya.html',
-      desc:'Five separate backend portals worked into one self-service cloud-communications platform.' },
-    { id:'ledger', n:'02', title:'Ledger', kind:'WEB APP', year:'2024', url:'projects/ledger.html',
-      desc:'A personal-finance dashboard that answers one question before it offers you twelve others.' },
-    { id:'cardinal', n:'03', title:'Cardinal', kind:'MOBILE', year:'2024', url:'projects/cardinal.html',
-      desc:'A field-service app for technicians who work with gloves on and no signal.' },
-    { id:'atlas', n:'04', title:'Atlas', kind:'SYSTEM', year:'2023', url:'projects/atlas.html',
-      desc:'A 240-component design system for four products that had drifted apart.' },
-    { id:'verge', n:'05', title:'Verge', kind:'WEB APP', year:'2023', url:'projects/verge.html',
-      desc:'A monitoring console built to stay readable when everything is going wrong at once.' },
-    { id:'pocket-reef', n:'06', title:'Pocket Reef', kind:'MOBILE', year:'2022', url:'projects/pocket-reef.html',
-      desc:'A quiet habit app for iOS that keeps track of streaks without leaning on guilt.' },
-    { id:'northwind', n:'07', title:'Northwind', kind:'BRAND + WEB', year:'2022', url:'projects/northwind.html',
-      desc:'Brand and marketing site for a climate company that had not launched yet.' },
-    { id:'commerce', n:'08', title:'Commerce', kind:'BRAND + WEB'/* TODO */, year:'2026'/* TODO */, url:'projects/commerce.html',
-      desc:'A brand and marketing site built as a kit of parts, held together by one type-and-color system.' },
-    { id:'feedonomics', n:'09', title:'Feedonomics', kind:'BRAND + WEB'/* TODO */, year:'2026'/* TODO */, url:'projects/feedonomics.html',
-      desc:'A forty-page marketing site moved onto a new design system a page at a time.' },
-    { id:'adobe-ultimate', n:'10', title:'Adobe Ultimate Support', kind:'MOBILE'/* TODO */, year:'2024'/* TODO */, url:'projects/adobe-ultimate.html',
+    { id:'adobe-ultimate', n:'01', title:'Adobe Ultimate Support', kind:'MOBILE'/* TODO */, year:'2024'/* TODO */, url:'projects/adobe-ultimate.html',
       desc:'A mobile support app that puts Adobe\'s enterprise clients within reach of their account team, handed over as a working coded prototype.' },
+    { id:'avaya', n:'02', title:'Avaya Cloud Portal', kind:'WEB APP', year:'2019', url:'projects/avaya.html',
+      desc:'Five separate backend portals worked into one self-service cloud-communications platform.' },
+    { id:'commerce', n:'03', title:'Commerce', kind:'BRAND + WEB'/* TODO */, year:'2026'/* TODO */, url:'projects/commerce.html',
+      desc:'A brand and marketing site built as a kit of parts, held together by one type-and-color system.' },
+    { id:'feedonomics', n:'04', title:'Feedonomics', kind:'BRAND + WEB'/* TODO */, year:'2026'/* TODO */, url:'projects/feedonomics.html',
+      desc:'A forty-page marketing site moved onto a new design system a page at a time.' },
   ];
 
   static getAllProjects() {
